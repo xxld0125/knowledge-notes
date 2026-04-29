@@ -1,0 +1,573 @@
+### 一、初始Nginx
+Nginx是一款轻量级的HTTP服务器，采用事件驱动的异步非阻塞处理方式框架，这让其具有极好的IO性能，时常用于服务端的反向代理和负载均衡。
+
+Nginx的优点：
+
++ 支持海量高并发：采用IO多路复用epoll。官方测试Nginx能够支持5万并发链接，实际生产环境中可以支撑2-4万并发连接数。
++ 内存消耗少：在主流的服务器中Nginx目前是内存消耗最小的了，比如我们用Nginx+PHP，在3万并发链接下，开启10个Nginx进程消耗150M内存。
++ 免费使用可以商业化：Nginx为开源软件，采用的是2-clause BSD-like协议，可以免费使用，并且可以用于商业。
++ 配置文件简单：网络和程序配置通俗易懂，即使非专业运维也能看懂。
+
+
+
+### 二、Nginx安装
+首先，确保自己连接上了服务器 `ssh 用户名@公网ip`，然后运行：
+
+```bash
+yum list | grep nginx
+```
+
+<font style="color:rgb(44, 62, 80);">接着运行：</font>
+
+```bash
+yum install nginx
+```
+
+<font style="color:rgb(44, 62, 80);">安装好后 </font>`<font style="color:rgb(71, 101, 130);">nginx -v</font>`<font style="color:rgb(44, 62, 80);"> 可以查看 Nginx 版本信息。并且使用 </font><font style="color:rgb(71, 101, 130);">rpm -ql nginx</font><font style="color:rgb(44, 62, 80);"> 可以查看 Nginx 被安装到了什么地方。</font>
+
+
+
+### 三、Nginx基本配置
+在使用`yum`安装完`Nginx`后，需要知道系统中多了那些文件，它们都安装到了那里。可以使用下面的命令进行查看：
+
+```bash
+rpm -ql nginx
+```
+
+
+
+`rpm` 是`linux`的`rpm`包管理工具，`-q` 代表询问模式，`-l` 代表返回列表，这样我们就可以找到`nginx`的所有安装位置了。
+
+列表列出的内容还是比较多的，我们尽量给大家进行讲解，我们这节先来看看重要的文件。
+
+#### nginx.conf文件解读
+```bash
+#运行用户，默认即是nginx，可以不进行设置
+user  nginx;
+#Nginx进程，一般设置为和CPU核数一样
+worker_processes  1;   
+#错误日志存放目录
+error_log  /var/log/nginx/error.log warn;
+#进程pid存放位置
+pid        /var/run/nginx.pid;
+
+
+events {
+    worker_connections  1024; # 单个后台进程的最大并发数
+}
+
+
+http {
+    include       /etc/nginx/mime.types;   #文件扩展名与类型映射表
+    default_type  application/octet-stream;  #默认文件类型
+    #设置日志模式
+    log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
+                      '$status $body_bytes_sent "$http_referer" '
+                      '"$http_user_agent" "$http_x_forwarded_for"';
+
+    access_log  /var/log/nginx/access.log  main;   #nginx访问日志存放位置
+
+    sendfile        on;   #开启高效传输模式
+    #tcp_nopush     on;    #减少网络报文段的数量
+
+    keepalive_timeout  65;  #保持连接的时间，也叫超时时间
+
+    #gzip  on;  #开启gzip压缩
+
+    include /etc/nginx/conf.d/*.conf; #包含的子配置项位置和文件
+```
+
+`default.conf` 配置项讲解 我们看到最后有一个子文件的配置项，那我们打开这个include子文件配置项看一下里边都有些什么内容。
+
+进入`conf.d`目录，然后使用`vim default.conf`进行查看。
+
+```bash
+server {
+    listen       80;   #配置监听端口
+    server_name  localhost;  //配置域名
+
+    #charset koi8-r;     
+    #access_log  /var/log/nginx/host.access.log  main;
+
+    location / {
+        root   /usr/share/nginx/html;     #服务默认启动目录
+        index  index.html index.htm;    #默认访问文件
+    }
+
+    #error_page  404              /404.html;   # 配置404页面
+
+    # redirect server error pages to the static page /50x.html
+    #
+    error_page   500 502 503 504  /50x.html;   #错误状态码的显示页面，配置后需要重启
+    location = /50x.html {
+        root   /usr/share/nginx/html;
+    }
+
+    # proxy the PHP scripts to Apache listening on 127.0.0.1:80
+    #
+    #location ~ \.php$ {
+    #    proxy_pass   http://127.0.0.1;
+    #}
+
+    # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
+    #
+    #location ~ \.php$ {
+    #    root           html;
+    #    fastcgi_pass   127.0.0.1:9000;
+    #    fastcgi_index  index.php;
+    #    fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;
+    #    include        fastcgi_params;
+    #}
+
+    # deny access to .htaccess files, if Apache's document root
+    # concurs with nginx's one
+    #
+    #location ~ /\.ht {
+    #    deny  all;
+    #}
+}
+```
+
+
+
+明白了这些配置项，我们知道我们的服务目录放在了`/usr/share/nginx/html`下，可以使用命令进入看一下目录下的文件。
+
+
+
+### 四、阿里云的安全组配置
+如果你使用的是阿里云，记得到ECS实例一下打开端口。
+
+步骤如下：
+
+1. 进入阿里云控制台，并找到ECS实例。
+2. 点击实例后边的“更多”
+3. 点击“网络和安全组” ，再点击“安全组配置”
+4. 右上角添加“安全组配置”
+5. 进行80端口的设置，具体设置如图就好。
+
+![](https://cdn.nlark.com/yuque/0/2022/png/25743026/1657251453218-0d6ef761-6a67-4c40-a08e-603bc7bc8b80.png)
+
+
+
+### 五、Nginx服务启动、停止、重启
+#### 1、启动Nginx服务
+默认的情况下，Nginx是不会自动启动的，需要我们手动进行启动，当然启动Nginx的方法也不是单一的。
+
+##### nginx直接启动
+在CentOS7.4版本里（低版本是不行的），是可以直接直接使用nginx启动服务的。
+
+```bash
+nginx
+```
+
+
+
+##### 使用systemctl命令启动
+还可以使用个Linux的命令进行启动，我一般都是采用这种方法进行使用。因为这种方法无论启动什么服务，都是一样的，只是换一下服务的名字（不用增加额外的记忆点）。
+
+```bash
+systemctl start nginx.service
+```
+
+
+
+输入命令后，没有任何提示，那我们如何知道Nginx服务已经启动了哪？可以使用Linux的组合命令，进行查询服务的运行状况。
+
+```bash
+ps aux | grep nginx
+```
+
+
+
+如果启动成功会出现如下图片中类似的结果。
+
+![](https://cdn.nlark.com/yuque/0/2022/png/25743026/1657251757849-572792b3-4a24-40e8-8dd0-5423ccbd6f16.png)
+
+有这三条记录，说明我们Nginx被正常开启了。
+
+
+
+#### 2、停止Nginx服务
+停止Nginx 方法有很多种，可以根据需求采用不一样的方法，我们一个一个说明。
+
+##### 立即停止服务
+```bash
+nginx  -s stop
+```
+
+这种方法比较强硬，无论进程是否在工作，都直接停止进程。
+
+##### 从容停止服务
+```bash
+nginx -s quit
+```
+
+这种方法较stop相比就比较温和一些了，需要进程完成当前工作后再停止。
+
+##### killall 方法杀死进程
+这种方法也是比较野蛮的，我们直接杀死进程，但是在上面使用没有效果时，我们用这种方法还是比较好的。
+
+```bash
+killall nginx
+```
+
+##### systemctl 停止
+```bash
+systemctl stop nginx.service
+```
+
+
+
+#### 3、重启Nginx服务
+有时候我们需要重启Nginx服务，这时候可以使用下面的命令。
+
+```bash
+systemctl restart nginx.service
+```
+
+#### 4、重新载入配置文件
+在重新编写或者修改Nginx的配置文件后，都需要作一下重新载入，这时候可以用Nginx给的命令。
+
+```bash
+nginx -s reload
+```
+
+#### 5、查看端口号
+在默认情况下，Nginx启动后会监听80端口，从而提供HTTP访问，如果80端口已经被占用则会启动失败。我么可以使用`netstat -tlnp`命令查看端口号的占用情况。
+
+
+
+### 六、自定义错误页和访问设置
+#### 1、多错误指向一个页面
+在/etc/nginx/nginx.conf 是可以看到下面这句话的。
+
+```bash
+error_page   500 502 503 504  /50x.html;
+```
+
+	error_page指令用于自定义错误页面，500，502，503，504 这些就是HTTP中最常见的错误代码，`/50.html `用于表示当发生上述指定的任意一个错误的时候，都是用网站根目录下的`/50.html`文件进行处理。
+
+#### 2、单独为错误置顶处理方式
+有些时候是要把这些错误页面单独的表现出来，给用户更好的体验。所以就要为每个错误码设置不同的页面。设置方法如下：
+
+```bash
+error_page 404  /404_error.html;
+```
+
+#### 3、把错误码换成一个地址
+处理错误的时候，不仅可以只使用本服务器的资源，还可以使用外部的资源。比如我们将配置文件设置成这样。
+
+```bash
+error_page  404 http://baidu.com;
+```
+
+我们使用了百度地址作为404页面没有找到的提示，就形成了，没有找到文件，就直接跳到了百度上了。
+
+
+
+#### 4、简单实现访问控制
+有时候我们的服务器只允许特定主机访问，比如内部OA系统，或者应用的管理后台系统，更或者是某些应用接口，这时候我们就需要控制一些IP访问，我们可以直接在`location`里进行配置。
+
+可以直接在`nginx.conf`里进行配置。
+
+```bash
+location / {
+  deny   123.9.51.42; // 禁止访问ip
+  allow  45.76.202.231; // 允许访问ip
+}
+
+```
+
+	配置完成后，重启一下服务器就可以实现限制和允许访问了。这在工作中非常常用，一定要好好记得。
+
+
+
+### 七、Nginx访问权限
+#### 1、指令优先级
+下面的配置表示只允许`45.76.202.231`进行访问，其他的IP是禁止访问的。但是如果我们把`deny all`指令，移动到 `allow 45.76.202.231`之前，会发生什么那？会发现所有的IP都不允许访问了。这说明了一个问题：就是在同一个块下的两个权限指令，先出现的设置会覆盖后出现的设置（也就是谁先触发，谁起作用）。
+
+```bash
+ location / {
+     allow  45.76.202.231;
+     deny   all;
+ }
+```
+
+
+
+#### 2、复杂访问控制权限匹配
+在工作中，访问权限的控制需求更加复杂，例如，对于网站下的img（图片目录）是运行所有用户访问，但对于网站下的admin目录则只允许公司内部固定IP访问。这时候仅靠deny和allow这两个指令，是无法实现的。我们需要location块来完成相关的需求匹配。
+
+上面的需求，配置代码如下：
+
+```bash
+location =/img{
+    allow all;
+}
+location =/admin{
+    deny all;
+}
+```
+
+=号代表精确匹配，使用了=后是根据其后的模式进行精确匹配。这个直接关系到我们网站的安全，一定要学会。
+
+
+
+#### 3、使用正则表达式设置访问权限
+只有精确匹配有时是完不成我们的工作任务的，比如现在我们要禁止访问所有php的页面，php的页面大多是后台的管理或者接口代码，所以为了安全我们经常要禁止所有用户访问，而只开放公司内部访问的。
+
+代码如下：
+
+```bash
+ location ~\.php$ {
+     deny all;
+ }
+```
+
+
+
+
+
+### 八、Nginx设置虚拟主机
+虚拟主机是指在一台物理主机服务器上划分出多个磁盘空间，每个磁盘空间都是一个虚拟主机，每台虚拟主机都可以对外提供Web服务，并且互不干扰。在外界看来，虚拟主机就是一台独立的服务器主机，这意味着用户能够利用虚拟主机把多个不同域名的网站部署在同一台服务器上，而不必再为简历一个网站单独购买一台服务器，既解决了维护服务器技术的难题，同时又极大地节省了服务器硬件成本和相关的维护费用。
+
+配置虚拟主机可以基于端口号、基于IP和基于域名，这节课我们先学习基于端口号来设置虚拟主机。
+
+#### 1、基于端口号配置虚拟主机
+基于端口号来配置虚拟主机，算是Nginx中最简单的一种方式了。原理就是Nginx监听多个端口，根据不同的端口号，来区分不同的网站。
+
+我们可以直接配置在主文件里`etc/nginx/nginx.conf`文件里， 也可以配置在子配置文件里`etc/nginx/conf.d/default.conf`。
+
+修改配置文件中的server选项，这时候就会有两个server。
+
+```bash
+server{
+        listen 8001;
+        server_name localhost;
+        root /usr/share/nginx/html/html8001;
+        index index.html;
+}
+```
+
+
+
+编在`usr/share/nginx/html/html8001/`目录下的`index.html`文件并查看结果。
+
+```html
+<h1>welcome port 8001</h1>
+```
+
+
+
+最后在浏览器中分别访问地址和带端口的地址。看到的结果是不同的。
+
+然后我们就可以在浏览器中访问`http://112.74.164.244:8001`了，当然你的IP跟这个肯定不一样，这个IP过几天就会过期的。
+
+#### 2、基于IP的虚拟主机
+基于IP和基于端口的配置几乎一样，只是把`server_name`选项，配置成IP就可以了。
+
+比如上面的配置，我们可以修改为：
+
+```bash
+server{
+    listen 80;
+    server_name 112.74.164.244;
+    root /usr/share/nginx/html/html8001;
+    index index.html;
+}
+```
+
+这种演示需要多个IP的支持，由于我们的阿里ECS只提供了一个IP，所以这里就不给大家演示了，如果工作中用到，只要安装这种方法配置就可以了。
+
+
+
+### 九、Nginx使用域名设置虚拟主机
+在真实的上线环境中，一个网站是需要域名和公网IP才可以访问的。这也是比较真实的一节课，我们在实际工作中配置最多的就是设置这种虚拟主机。
+
+先要对域名进行解析，这样域名才能正确定位到你需要的IP上。 我这里新建了两个解析，分别是:
+
++ nginx.jspang.com :这个域名映射到默认的Nginx首页位置。
++ nginx2.jspang.com : 这个域名映射到原来的8001端口的位置。
+
+
+
+配置以域名为划分的虚拟主机
+
+我们修改`etc/nginx/conf.d`目录下的`default.conf` 文件，把原来的80端口虚拟主机改为以域名划分的虚拟主机。代码如下：
+
+```bash
+server {
+    listen       80;
+    server_name  nginx.jspang.com;
+}
+```
+
+
+
+我们再把同目录下的`8001.conf`文件进行修改，改成如下：
+
+```bash
+server{
+        listen 80;
+        server_name nginx2.jspang.com;
+        location / {
+                root /usr/share/nginx/html/html8001;
+                index index.html index.htm;
+        }
+}
+```
+
+然后我们用平滑重启的方式，进行重启，这时候我们在浏览器中访问这两个网页。
+
+其实域名设置虚拟主机也非常简单，主要操作的是配置文件的`server_name`项，还需要域名解析的配合。小伙伴们一定要进行练习一下。后面的课程可能就没有这么简单了。
+
+
+
+### 十、Nginx反向代理
+作为一个前端必会的一个技能是反向代理。大家都知道，我们现在的web模式基本的都是标准的CS结构，即Client端到Server端。那代理就是在Client端和Server端之间增加一个提供特定功能的服务器，这个服务器就是我们说的代理服务器。
+
+反向代理的用途和好处
+
++ 安全性：正向代理的客户端能够在隐藏自身信息的同时访问任意网站，这个给网络安全代理了极大的威胁。因此，我们必须把服务器保护起来，使用反向代理客户端用户只能通过外来网来访问代理服务器，并且用户并不知道自己访问的真实服务器是那一台，可以很好的提供安全保护。
++ 功能性：反向代理的主要用途是为多个服务器提供负债均衡、缓存等功能。负载均衡就是一个网站的内容被部署在若干服务器上，可以把这些机子看成一个集群，那Nginx可以将接收到的客户端请求“均匀地”分配到这个集群中所有的服务器上，从而实现服务器压力的平均分配，也叫负载均衡。
+
+
+
+现在我们要访问`http://nginx2.jspang.com`然后反向代理到`jspang.com`这个网站。我们直接到`etc/nginx/con.d/8001.conf`进行修改。
+
+修改后的配置文件如下：
+
+```bash
+server{
+        listen 80;
+        server_name nginx2.jspang.com;
+        location / {
+               proxy_pass http://jspang.com;
+        }
+}
+```
+
+一般我们反向代理的都是一个IP，但是我这里代理了一个域名也是可以的。其实这时候我们反向代理就算成功了，我们可以在浏览器中打开http://nginx2.jspang.com来测试一下。
+
+
+
+反向代理常用的指令：
+
++ proxy_set_header :在将客户端请求发送给后端服务器之前，更改来自客户端的请求头信息。
++ proxy_connect_timeout:配置Nginx与后端代理服务器尝试建立连接的超时时间。
++ proxy_read_timeout : 配置Nginx向后端服务器组发出read请求后，等待相应的超时时间。
++ proxy_send_timeout：配置Nginx向后端服务器组发出write请求后，等待相应的超时时间。
++ proxy_redirect :用于修改后端服务器返回的响应头中的Location和Refresh。
+
+
+
+### 十一、Nginx适配PC或移动设备
+现在很多网站都是有了PC端和H5站点的，因为这样就可以根据客户设备的不同，显示出体验更好的，不同的页面了。
+
+这样的需求有人说拿自适应就可以搞定，比如我们常说的bootstrap和24格布局法，这些确实是非常好的方案，但是无论是复杂性和易用性上面还是不如分开编写的好，比如我们常见的淘宝、京东......这些大型网站就都没有采用自适应，而是用分开制作的方式。
+
+
+
+那分开制作如何通过配置Nginx来识别出应该展示哪个页面那？。
+
+
+
+`**$http_user_agent**`**的使用：**
+
+Nginx通过内置变量`$http_user_agent`，可以获取到请求客户端的`userAgent`，就可以用户目前处于移动端还是PC端，进而展示不同的页面给用户。
+
+
+
+操作步骤如下：
+
+1. 在`/usr/share/nginx/`目录下新建两个文件夹，分别为：pc和mobile目录
+
+```bash
+cd /usr/share/nginx mkdir pc mkdir mobile
+```
+
+
+
+2. 在pc和miblic目录下，新建两个index.html文件，文件里下面内容
+
+```bash
+<h1>I am pc!</h1>
+```
+
+```bash
+<h1>I am mobile!</h1>
+```
+
+
+
+3. 进入etc/nginx/conf.d目录下，修改8001.conf文件，改为下面的形式:
+
+```bash
+server{
+     listen 80;
+     server_name nginx2.jspang.com;
+     location / {
+      root /usr/share/nginx/pc;
+      if ($http_user_agent ~* '(Android|webOS|iPhone|iPod|BlackBerry)') {
+         root /usr/share/nginx/mobile;
+      }
+      index index.html;
+     }
+}
+```
+
+
+
+### 十二、Nginx的Gzip压缩配置
+Gzip是网页的一种网页压缩技术，经过gzip压缩后，页面大小可以变为原来的30%甚至更小。更小的网页会让用户浏览的体验更好，速度更快。gzip网页压缩的实现需要浏览器和服务器的支持。
+
+![](https://cdn.nlark.com/yuque/0/2022/png/25743026/1657270147095-3d01de9a-0f87-4f04-9862-f79853f36100.png)
+
+从上图可以清楚的明白，gzip是需要服务器和浏览器同事支持的。当浏览器支持gzip压缩时，会在请求消息中包含`Accept-Encoding:gzip`,这样Nginx就会向浏览器发送听过gzip后的内容，同时在相应信息头中加入`Content-Encoding:gzip`，声明这是gzip后的内容，告知浏览器要先解压后才能解析输出。
+
+
+
+**gzip的配置项**
+
+Nginx提供了专门的gzip模块，并且模块中的指令非常丰富。
+
++ gzip : 该指令用于开启或 关闭gzip模块。
++ gzip_buffers : 设置系统获取几个单位的缓存用于存储gzip的压缩结果数据流。
++ gzip_comp_level : gzip压缩比，压缩级别是1-9，1的压缩级别最低，9的压缩级别最高。压缩级别越高压缩率越大，压缩时间越长。
++ gzip_disable : 可以通过该指令对一些特定的User-Agent不使用压缩功能。
++ gzip_min_length:设置允许压缩的页面最小字节数，页面字节数从相应消息头的Content-length中进行获取。
++ gzip_http_version：识别HTTP协议版本，其值可以是1.1.或1.0.
++ gzip_proxied : 用于设置启用或禁用从代理服务器上收到相应内容gzip压缩。
++ gzip_vary : 用于在响应消息头中添加Vary：Accept-Encoding,使代理服务器根据请求头中的Accept-Encoding识别是否启用gzip压缩。
+
+
+
+**gzip最简单的配置**
+
+```bash
+http {
+   .....
+    gzip on;
+    gzip_types text/plain application/javascript text/css;
+   .....
+}
+```
+
+`gzip on`是启用gizp模块，下面的一行是用于在客户端访问网页时，对文本、JavaScript 和CSS文件进行压缩输出。
+
+配置好后，我们就可以重启Nginx服务，让我们的gizp生效了。
+
+
+
+如果你是windows操作系统，你可以按F12键打开开发者工具，单机当前的请求，在标签中选择Headers，查看HTTP响应头信息。你可以清楚的看见`Content-Encoding`为gzip类型。
+
+![](https://cdn.nlark.com/yuque/0/2022/webp/25743026/1657270201708-986b6aa1-be0f-4798-ae10-b1d25d6aad47.webp)
+
+看到这个，说明我们成功开启了gzip。
+
+
+
+### 参考资料
++ [https://juejin.cn/post/7069586207877005342](https://juejin.cn/post/7069586207877005342)
++ [https://jspang.com/article/39](https://jspang.com/article/39)
+
