@@ -96,12 +96,46 @@ def has_children(items: list[TocItem], idx: int) -> bool:
     return j < len(items) and items[j].level > items[idx].level
 
 
-def find_doc_file_flat(docs_root: Path, slug: str) -> Path | None:
-    candidates = list(docs_root.glob(f"{slug}-*.md"))
-    if candidates:
-        return sorted(candidates, key=lambda p: (len(p.name), p.name))[0]
-    p2 = docs_root / f"{slug}.md"
-    return p2 if p2.exists() else None
+def _index_md_files(docs_root: Path) -> dict[str, Path]:
+    """
+    Index all markdown files under docs_root by basename.
+
+    Notes:
+    - We intentionally index recursively because after restructure_by_toc the docs
+      are moved into nested directories.
+    - If multiple files share the same basename, we keep the "closest" one to
+      docs_root (shortest path) for deterministic behavior.
+    """
+    out: dict[str, Path] = {}
+    for p in docs_root.rglob("*.md"):
+        if p.name == "000_目录.md":
+            continue
+        prev = out.get(p.name)
+        if prev is None or len(p.parts) < len(prev.parts) or str(p) < str(prev):
+            out[p.name] = p
+    return out
+
+
+def find_doc_file(docs_root: Path, slug: str, title: str) -> Path | None:
+    """
+    Find an exported doc file by slug/title.
+
+    Exported filename convention:
+      - before removing slug prefix: "{slug}-{sanitize_segment(title)}.md"
+      - after removing slug prefix:  "{sanitize_segment(title)}.md"
+    """
+    index = _index_md_files(docs_root)
+    title_safe = sanitize_segment(title)
+
+    for name in (
+        f"{slug}-{title_safe}.md",
+        f"{title_safe}.md",
+        f"{slug}.md",
+    ):
+        p = index.get(name)
+        if p is not None:
+            return p
+    return None
 
 
 def safe_move(src: Path, dst: Path) -> None:
@@ -159,7 +193,7 @@ def restructure_by_toc(repo_root: Path, book_dir: Path) -> None:
             continue
 
         slug = meta["slug"]
-        src = find_doc_file_flat(docs_root, slug)
+        src = find_doc_file(docs_root, slug, meta["title"])
         if src is None:
             lines.append(f"{indent}- {it.title} **（本地缺失）**")
             continue
