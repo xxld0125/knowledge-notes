@@ -1,0 +1,15 @@
+.DS_Store
+
+# Obsidian workspace (personal/local)
+.obsidian/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Local export/migration artifacts (if generated in-repo)
+.cache/
+tmp/
+dist/
+
