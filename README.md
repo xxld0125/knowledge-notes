@@ -13,3 +13,4 @@
 - [个人](./knowledge-base/个人/docs/000_目录.md)
 - [全栈](./knowledge-base/全栈/docs/000_目录.md)
 - [code](./knowledge-base/code/docs/000_目录.md)
+- [微信开发](./knowledge-base/微信开发/docs/000_目录.md)
