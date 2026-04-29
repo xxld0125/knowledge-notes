@@ -14,3 +14,4 @@
 - [全栈](./knowledge-base/全栈/docs/000_目录.md)
 - [code](./knowledge-base/code/docs/000_目录.md)
 - [微信开发](./knowledge-base/微信开发/docs/000_目录.md)
+- [CHATGPT GPTS与语聚平台](./knowledge-base/CHATGPT GPTS与语聚平台/docs/000_目录.md)
