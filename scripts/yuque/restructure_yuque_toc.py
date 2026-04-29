@@ -117,7 +117,7 @@ def main() -> None:
 
     link_lines.extend(
         [
-            "# 目录（从语雀 TOC 生成）",
+            "# 目录",
             "",
             f"- 生成来源：`{toc_path.relative_to(repo_root)}`",
             f"- 映射来源：`{index_path.relative_to(repo_root)}`",

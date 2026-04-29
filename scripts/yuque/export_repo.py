@@ -126,7 +126,7 @@ def restructure_by_toc(repo_root: Path, book_dir: Path) -> None:
     lines: list[str] = []
     lines.extend(
         [
-            "# 目录（从语雀 TOC 生成）",
+            "# 目录",
             "",
             f"- 生成来源：`{(meta_dir / 'toc.json').relative_to(repo_root)}`",
             f"- 映射来源：`{(meta_dir / 'docs-index.json').relative_to(repo_root)}`",
