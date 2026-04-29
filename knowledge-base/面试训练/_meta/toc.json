@@ -1,0 +1,576 @@
+[
+  {
+    "title": "进度管理",
+    "uuid": "GkBAIaP8NJsYXVYH",
+    "doc_id": "",
+    "level": 0,
+    "visible": true
+  },
+  {
+    "title": "阶段成果记录",
+    "uuid": "qdtaJGOOS4slxMTn",
+    "doc_id": 164554984,
+    "level": 1,
+    "visible": true
+  },
+  {
+    "title": "0-专项目标",
+    "uuid": "3Ccic0YSM05HMkwi",
+    "doc_id": 162862567,
+    "level": 1,
+    "visible": true
+  },
+  {
+    "title": "前端工程化",
+    "uuid": "ADyIVHVMYBcwrNg0",
+    "doc_id": 164264746,
+    "level": 2,
+    "visible": true
+  },
+  {
+    "title": "1-专项进度",
+    "uuid": "OQ72us5aryS2WFzX",
+    "doc_id": "",
+    "level": 1,
+    "visible": true
+  },
+  {
+    "title": "Vue",
+    "uuid": "_kK0e4lrOy4EHk2X",
+    "doc_id": 207511025,
+    "level": 2,
+    "visible": true
+  },
+  {
+    "title": "Vue2",
+    "uuid": "rL9C-uU5FFOB39f-",
+    "doc_id": 207539934,
+    "level": 3,
+    "visible": true
+  },
+  {
+    "title": "入门阶段",
+    "uuid": "YsReWCrwdfuNoA5g",
+    "doc_id": "",
+    "level": 4,
+    "visible": true
+  },
+  {
+    "title": "工具函数",
+    "uuid": "5Qlw5OKRdZAG2dZc",
+    "doc_id": 207543874,
+    "level": 5,
+    "visible": true
+  },
+  {
+    "title": "nextTick",
+    "uuid": "XExdbFtOR5V8AxbM",
+    "doc_id": 207865200,
+    "level": 5,
+    "visible": true
+  },
+  {
+    "title": "错误处理",
+    "uuid": "BJcObKaH5mt8DfZv",
+    "doc_id": 207737012,
+    "level": 5,
+    "visible": false
+  },
+  {
+    "title": "响应式系统基础",
+    "uuid": "u1q0AqEhJoP3sCCh",
+    "doc_id": 208110541,
+    "level": 5,
+    "visible": true
+  },
+  {
+    "title": "事件系统",
+    "uuid": "8s39UJo-_Lk8Ky15",
+    "doc_id": 209048196,
+    "level": 5,
+    "visible": true
+  },
+  {
+    "title": "基础阶段",
+    "uuid": "2Juc9H1xUMn4ky98",
+    "doc_id": "",
+    "level": 4,
+    "visible": true
+  },
+  {
+    "title": "Vue实例创建与生命周期",
+    "uuid": "wFGF2MOHs0Aqfdp3",
+    "doc_id": 209100650,
+    "level": 5,
+    "visible": true
+  },
+  {
+    "title": "虚拟DOM基础概念",
+    "uuid": "VVY5Lu-eEh26GJBV",
+    "doc_id": 209100690,
+    "level": 5,
+    "visible": true
+  },
+  {
+    "title": "响应式系统进阶",
+    "uuid": "BsPoMxv8a7kyl1Uw",
+    "doc_id": 209100775,
+    "level": 5,
+    "visible": true
+  },
+  {
+    "title": "进阶阶段",
+    "uuid": "dwbKx-6BmleWYJ0H",
+    "doc_id": "",
+    "level": 4,
+    "visible": true
+  },
+  {
+    "title": "模板编译系统",
+    "uuid": "FijD4SPmY8Jm6ksu",
+    "doc_id": 209100840,
+    "level": 5,
+    "visible": true
+  },
+  {
+    "title": "渲染系统与Patch算法",
+    "uuid": "tjRj01KqYRbXWtAd",
+    "doc_id": 209100919,
+    "level": 5,
+    "visible": true
+  },
+  {
+    "title": "组件系统",
+    "uuid": "tmuKCpxChrTbKpD3",
+    "doc_id": 209100963,
+    "level": 5,
+    "visible": true
+  },
+  {
+    "title": "高级阶段",
+    "uuid": "3KyfPiNPlIY-xfRH",
+    "doc_id": "",
+    "level": 4,
+    "visible": true
+  },
+  {
+    "title": "插件机制与全局API",
+    "uuid": "DjgXN8Cxriahocet",
+    "doc_id": 209101020,
+    "level": 5,
+    "visible": true
+  },
+  {
+    "title": "指令系统",
+    "uuid": "yOw0SKnsYBRfbMDf",
+    "doc_id": 209101052,
+    "level": 5,
+    "visible": true
+  },
+  {
+    "title": "服务端渲染",
+    "uuid": "DurGyDVonwZ8HygN",
+    "doc_id": 209101096,
+    "level": 5,
+    "visible": true
+  },
+  {
+    "title": "编译优化",
+    "uuid": "MRoJKDGA5CzL7p3B",
+    "doc_id": 209101173,
+    "level": 5,
+    "visible": true
+  },
+  {
+    "title": "2024-04",
+    "uuid": "UGaNRTkyASDUJaW9",
+    "doc_id": 164029467,
+    "level": 2,
+    "visible": true
+  },
+  {
+    "title": "4.01-4.07",
+    "uuid": "BRA0NBavFcDm2rfW",
+    "doc_id": 164033897,
+    "level": 3,
+    "visible": true
+  },
+  {
+    "title": "手写系列",
+    "uuid": "jZpIJNtwacaojy7q",
+    "doc_id": "",
+    "level": 0,
+    "visible": true
+  },
+  {
+    "title": "场景题",
+    "uuid": "RLaxSXxFEwmhKU4L",
+    "doc_id": "",
+    "level": 1,
+    "visible": true
+  },
+  {
+    "title": "EventEmitter",
+    "uuid": "T-ktUtc5Uqm3fZEP",
+    "doc_id": 160130634,
+    "level": 2,
+    "visible": false
+  },
+  {
+    "title": "数组排序",
+    "uuid": "EMlWIcJZqiwxS5e3",
+    "doc_id": 159854327,
+    "level": 2,
+    "visible": true
+  },
+  {
+    "title": "数组扁平化",
+    "uuid": "Ey5JYYFWv8Qx1_Uy",
+    "doc_id": 159853199,
+    "level": 2,
+    "visible": true
+  },
+  {
+    "title": "继承",
+    "uuid": "o_j3tWyBpQ_16h7B",
+    "doc_id": 159851240,
+    "level": 2,
+    "visible": false
+  },
+  {
+    "title": "数据类型判断方法",
+    "uuid": "ts9LCWJT5HAoxjvU",
+    "doc_id": 159850092,
+    "level": 2,
+    "visible": false
+  },
+  {
+    "title": "深拷贝/浅拷贝",
+    "uuid": "mCeHWTasLX1n_Jwu",
+    "doc_id": 159850082,
+    "level": 2,
+    "visible": true
+  },
+  {
+    "title": "JavaScript Api",
+    "uuid": "O5pYkXr2WgVjl8Yd",
+    "doc_id": "",
+    "level": 1,
+    "visible": true
+  },
+  {
+    "title": "Promise",
+    "uuid": "HIg-v-npmdMSFaoZ",
+    "doc_id": 160130860,
+    "level": 2,
+    "visible": false
+  },
+  {
+    "title": "JSON.stringify",
+    "uuid": "WXuGmWxdS3Wx1YXk",
+    "doc_id": 159853167,
+    "level": 2,
+    "visible": false
+  },
+  {
+    "title": "Array",
+    "uuid": "BQhkta0RKCHLFBls",
+    "doc_id": "",
+    "level": 2,
+    "visible": true
+  },
+  {
+    "title": "Array.prototype.sort - 待补充",
+    "uuid": "VH5KjlRRREKz9Q1k",
+    "doc_id": 74520434,
+    "level": 3,
+    "visible": true
+  },
+  {
+    "title": "Array.prototype.map",
+    "uuid": "CJqXBXB3GhgoN4ys",
+    "doc_id": 74520396,
+    "level": 3,
+    "visible": true
+  },
+  {
+    "title": "Array.prototype.splice",
+    "uuid": "4MEgGO8Gc6dqpp27",
+    "doc_id": 74520337,
+    "level": 3,
+    "visible": true
+  },
+  {
+    "title": "Function",
+    "uuid": "BfQR3PYrtvz1OchP",
+    "doc_id": "",
+    "level": 2,
+    "visible": true
+  },
+  {
+    "title": "Function.prototype.bind",
+    "uuid": "Rh_h7YoHHGeWJrye",
+    "doc_id": 74520764,
+    "level": 3,
+    "visible": true
+  },
+  {
+    "title": "Function.prototype.apply",
+    "uuid": "8gUhp4FjJnaMYUV2",
+    "doc_id": 74520722,
+    "level": 3,
+    "visible": true
+  },
+  {
+    "title": "Function.prototype.call",
+    "uuid": "311pEnpYB7Klznv_",
+    "doc_id": 74520695,
+    "level": 3,
+    "visible": true
+  },
+  {
+    "title": "Object",
+    "uuid": "uHtgvyKh4Qg8JKzs",
+    "doc_id": "",
+    "level": 2,
+    "visible": true
+  },
+  {
+    "title": "Object.is",
+    "uuid": "pYU9GtrL1k3RAhls",
+    "doc_id": 157484982,
+    "level": 3,
+    "visible": true
+  },
+  {
+    "title": "Object.create",
+    "uuid": "sRzlJKGKEiLubz3X",
+    "doc_id": 74520550,
+    "level": 3,
+    "visible": true
+  },
+  {
+    "title": "promise",
+    "uuid": "w13lbWAxoZOzRWRh",
+    "doc_id": 74520875,
+    "level": 2,
+    "visible": true
+  },
+  {
+    "title": "运算符",
+    "uuid": "MfQAD_gGlk6B6D0N",
+    "doc_id": "",
+    "level": 2,
+    "visible": true
+  },
+  {
+    "title": "instanceof",
+    "uuid": "InC0HpeBgK9fqkTA",
+    "doc_id": 74521080,
+    "level": 3,
+    "visible": true
+  },
+  {
+    "title": "new",
+    "uuid": "lPEzA-WWNYP6OJMM",
+    "doc_id": 74520846,
+    "level": 3,
+    "visible": true
+  },
+  {
+    "title": "css相关",
+    "uuid": "wyishZyOnNDlTZvn",
+    "doc_id": 74520075,
+    "level": 1,
+    "visible": true
+  },
+  {
+    "title": "面试系列汇总",
+    "uuid": "jejbeVCaMxlOmD_o",
+    "doc_id": 75690696,
+    "level": 1,
+    "visible": true
+  },
+  {
+    "title": "基础八股文",
+    "uuid": "-uaNozBtetcUdtkJ",
+    "doc_id": "",
+    "level": 0,
+    "visible": true
+  },
+  {
+    "title": "HTML",
+    "uuid": "N_lY_xPmvw1KP9Zg",
+    "doc_id": 161885223,
+    "level": 1,
+    "visible": false
+  },
+  {
+    "title": "CSS",
+    "uuid": "kqYFkt--PKEl4TYp",
+    "doc_id": 161885231,
+    "level": 1,
+    "visible": false
+  },
+  {
+    "title": "JavaScript",
+    "uuid": "IdDhXdI4xamShsgV",
+    "doc_id": "",
+    "level": 1,
+    "visible": true
+  },
+  {
+    "title": "原型",
+    "uuid": "Wb4xcQ5_Jf4dwOKK",
+    "doc_id": 156456362,
+    "level": 2,
+    "visible": true
+  },
+  {
+    "title": "数据类型",
+    "uuid": "48HG6OyQfCZ_QSWh",
+    "doc_id": 156572508,
+    "level": 2,
+    "visible": true
+  },
+  {
+    "title": "类型转换",
+    "uuid": "UIkJ6CrH8j5rZpE1",
+    "doc_id": 157480394,
+    "level": 3,
+    "visible": true
+  },
+  {
+    "title": "作用域",
+    "uuid": "mWxhQEYXDExqyvKx",
+    "doc_id": 158159542,
+    "level": 2,
+    "visible": true
+  },
+  {
+    "title": "阶段性记录",
+    "uuid": "cu96pRt3Zbd3xdlX",
+    "doc_id": "",
+    "level": 0,
+    "visible": true
+  },
+  {
+    "title": "摸底",
+    "uuid": "iGIlLaCbRM0yOtE1",
+    "doc_id": 156339203,
+    "level": 1,
+    "visible": true
+  },
+  {
+    "title": "面试经验分享",
+    "uuid": "klfvoL2jr8BHuKpY",
+    "doc_id": "",
+    "level": 0,
+    "visible": true
+  },
+  {
+    "title": "经验分享",
+    "uuid": "yyxhlV7iIfrscu61",
+    "doc_id": 156338618,
+    "level": 1,
+    "visible": true
+  },
+  {
+    "title": "bigfrontend.dev",
+    "uuid": "bOgMAwmbwGvIuIEL",
+    "doc_id": "",
+    "level": 0,
+    "visible": true
+  },
+  {
+    "title": "刷题记录",
+    "uuid": "js_Us7BxRArY0WUR",
+    "doc_id": 151676078,
+    "level": 1,
+    "visible": true
+  },
+  {
+    "title": "算法",
+    "uuid": "FLWwaA8q_VIo714W",
+    "doc_id": "",
+    "level": 0,
+    "visible": true
+  },
+  {
+    "title": "Leetcode javascript 环境",
+    "uuid": "RPekvk8MV4iyAslx",
+    "doc_id": 168024597,
+    "level": 1,
+    "visible": true
+  },
+  {
+    "title": "数组",
+    "uuid": "R-_ZO9KAhoDPoPEE",
+    "doc_id": 161502204,
+    "level": 1,
+    "visible": true
+  },
+  {
+    "title": "链表",
+    "uuid": "GOKjWNYV1OKrM1fd",
+    "doc_id": 161815337,
+    "level": 1,
+    "visible": true
+  },
+  {
+    "title": "哈希表",
+    "uuid": "D8gHOLMkdy7BFd9c",
+    "doc_id": 161815392,
+    "level": 1,
+    "visible": false
+  },
+  {
+    "title": "字符串",
+    "uuid": "2R3JGvLsp-Zvf4dV",
+    "doc_id": 161815446,
+    "level": 1,
+    "visible": false
+  },
+  {
+    "title": "双指针",
+    "uuid": "DpA5VKTF2CjqZfmN",
+    "doc_id": 161815503,
+    "level": 1,
+    "visible": false
+  },
+  {
+    "title": "栈和队列",
+    "uuid": "6YLOfksN05F5lMbe",
+    "doc_id": 161815555,
+    "level": 1,
+    "visible": false
+  },
+  {
+    "title": "二叉树",
+    "uuid": "3_FSWBHHyKy3VFn0",
+    "doc_id": 161815631,
+    "level": 1,
+    "visible": false
+  },
+  {
+    "title": "回溯",
+    "uuid": "TAtHGaKiW8-QRtrl",
+    "doc_id": 161815657,
+    "level": 1,
+    "visible": false
+  },
+  {
+    "title": "贪心",
+    "uuid": "C0-jXK9CeVhZJUEM",
+    "doc_id": 161815736,
+    "level": 1,
+    "visible": false
+  },
+  {
+    "title": "动态规划",
+    "uuid": "uIdnzz7O5Ua7RCS4",
+    "doc_id": 161815800,
+    "level": 1,
+    "visible": false
+  }
+]
