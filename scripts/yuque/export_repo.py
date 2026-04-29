@@ -195,10 +195,24 @@ def export_repo(repo_id: str, out_root: Path, token: str, sleep_ms: int = 150) -
     toc_data = toc.get("data") if isinstance(toc, dict) and "data" in toc else toc
     json_dump(book_dir / "_meta/toc.json", toc_data)
 
-    # docs list
-    docs = api_get(token, f"/repos/{urllib.parse.quote(repo_id, safe='/')}/docs")
-    docs_data = docs.get("data") if isinstance(docs, dict) and "data" in docs else docs
-    docs_index = [{"id": int(d["id"]), "slug": d["slug"], "title": d["title"]} for d in docs_data]
+    # docs list (paginated)
+    docs_index: list[dict[str, Any]] = []
+    offset = 0
+    limit = 100
+    while True:
+        docs = api_get(
+            token,
+            f"/repos/{urllib.parse.quote(repo_id, safe='/')}/docs",
+            params={"offset": offset, "limit": limit},
+        )
+        docs_data = docs.get("data") if isinstance(docs, dict) and "data" in docs else docs
+        if not isinstance(docs_data, list):
+            die(f"Unexpected docs list response: {type(docs_data)}")
+        batch = [{"id": int(d["id"]), "slug": d["slug"], "title": d["title"]} for d in docs_data]
+        docs_index.extend(batch)
+        if len(docs_data) < limit:
+            break
+        offset += limit
     json_dump(book_dir / "_meta/docs-index.json", docs_index)
 
     # export docs
