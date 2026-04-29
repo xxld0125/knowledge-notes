@@ -1,0 +1,3110 @@
+{
+  "nodes": [
+    {
+      "id": "cbed35ae-b714-4cac-9a62-3dc607391d4e",
+      "type": "text",
+      "x": 890.3662298828126,
+      "y": 350.6250018554688,
+      "width": 320,
+      "height": 120,
+      "text": "对象",
+      "color": "5"
+    },
+    {
+      "id": "2c6fa958-0eb1-4920-8785-c614894973a3",
+      "type": "text",
+      "x": 1310.3662298828126,
+      "y": -4623.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "对象的属性和访问方式",
+      "color": "5"
+    },
+    {
+      "id": "a1602bb1-1b79-40c5-abd9-bf5adf1ef8c4",
+      "type": "text",
+      "x": 1730.3662298828126,
+      "y": -5043.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "对象的属性",
+      "color": "5"
+    },
+    {
+      "id": "dfda0f48-049f-4f23-861b-c56e036912e2",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": -5443.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "数据属性",
+      "color": "5"
+    },
+    {
+      "id": "7c6cc51c-a1e9-4464-94a2-0944d2204dc1",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": -5643.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "数据属性具有4个描述其行为的特性",
+      "color": "5"
+    },
+    {
+      "id": "f5b978a4-947e-4844-8607-b4e17f6649e9",
+      "type": "text",
+      "x": 2990.3662298828126,
+      "y": -5883.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "[[Configurable]]",
+      "color": "5"
+    },
+    {
+      "id": "5f5d2e17-9078-4fb5-9ce1-13edd15189cd",
+      "type": "text",
+      "x": 3410.3662298828126,
+      "y": -5883.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "表示属性能否删除而重新定义，或者是否可以修改为访问器属性，默认值为true",
+      "color": "5"
+    },
+    {
+      "id": "fd0dbe91-559a-4111-9e63-d1e4ef7ffa34",
+      "type": "text",
+      "x": 2990.3662298828126,
+      "y": -5723.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "[[Enumerable]]",
+      "color": "5"
+    },
+    {
+      "id": "6c46d3fd-5b95-48af-b506-6753f05e5fa8",
+      "type": "text",
+      "x": 3410.3662298828126,
+      "y": -5723.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "表示属性是否可枚举，可枚举的属性能够通过for...in循环返回，默认值为true",
+      "color": "5"
+    },
+    {
+      "id": "505bcd3c-7514-4ace-804f-eea8d0d7ce1a",
+      "type": "text",
+      "x": 2990.3662298828126,
+      "y": -5563.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "[[Writable]]",
+      "color": "5"
+    },
+    {
+      "id": "5350fcbb-1a6e-4da0-90b7-14067dcc989c",
+      "type": "text",
+      "x": 3410.3662298828126,
+      "y": -5563.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "表示属性值能否被修改，默认值为true",
+      "color": "5"
+    },
+    {
+      "id": "4785211d-37d3-42d5-8ff8-2ce42ceaf97d",
+      "type": "text",
+      "x": 2990.3662298828126,
+      "y": -5403.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "[[Value]]",
+      "color": "5"
+    },
+    {
+      "id": "bd2dcac0-b3ad-4b52-8b0d-f6ea169fb84b",
+      "type": "text",
+      "x": 3410.3662298828126,
+      "y": -5403.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "表示属性的真实值，属性的读取和写入均通过此属性完成，默认值为undefined",
+      "color": "5"
+    },
+    {
+      "id": "954ae4b8-90e7-4e53-9221-d186e6e3d5e7",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": -5243.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "通过Object.defineProperty()定义或修改",
+      "color": "5"
+    },
+    {
+      "id": "16227057-5ed7-409a-970c-0cd3468e1c3c",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": -4643.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "访问器属性",
+      "color": "5"
+    },
+    {
+      "id": "38a368a2-6797-498a-b72e-355e2e45283b",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": -4843.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "访问器属性同样包含4个特性",
+      "color": "5"
+    },
+    {
+      "id": "db599f0f-10ae-4031-85f8-5f7505b3828f",
+      "type": "text",
+      "x": 2990.3662298828126,
+      "y": -5083.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "[[Configurable]]",
+      "color": "5"
+    },
+    {
+      "id": "d1c6c42c-2de6-41d9-8540-bec97b40beef",
+      "type": "text",
+      "x": 3410.3662298828126,
+      "y": -5083.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "表示属性能否删除而重新定义，或者是否可以修改为访问器属性，默认值为true",
+      "color": "5"
+    },
+    {
+      "id": "33a45786-e59e-4199-b2d7-7bb950183434",
+      "type": "text",
+      "x": 2990.3662298828126,
+      "y": -4923.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "[[Enumerable]]",
+      "color": "5"
+    },
+    {
+      "id": "19a8575c-3cf2-4141-a8ed-cb604d131474",
+      "type": "text",
+      "x": 3410.3662298828126,
+      "y": -4923.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "表示属性是否可枚举，可枚举的属性能够通过for...in循环返回，默认值为true",
+      "color": "5"
+    },
+    {
+      "id": "448ec329-8325-40a4-b4ba-ded901da8dce",
+      "type": "text",
+      "x": 2990.3662298828126,
+      "y": -4763.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "[[Get]]",
+      "color": "5"
+    },
+    {
+      "id": "b07ddace-2172-49fb-9c3c-5596b2416e2b",
+      "type": "text",
+      "x": 3410.3662298828126,
+      "y": -4763.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "在读取属性值时调用的函数（一般称为getter()函数），负责返回有效的值，默认值为undefined",
+      "color": "5"
+    },
+    {
+      "id": "c63e3c89-5147-43c2-b184-929eb10d1fe6",
+      "type": "text",
+      "x": 2990.3662298828126,
+      "y": -4603.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "[[Set]]",
+      "color": "5"
+    },
+    {
+      "id": "23ecda24-9f42-4d70-ad2f-b61f09f3963b",
+      "type": "text",
+      "x": 3410.3662298828126,
+      "y": -4603.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "在写入属性值时调用的函数（一般称为setter()函数），负责处理数据，默认值为undefined",
+      "color": "5"
+    },
+    {
+      "id": "730f7f5e-e0aa-4fa8-afe1-accc85521a18",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": -4443.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "通过Object.defineProperty()定义或修改",
+      "color": "5"
+    },
+    {
+      "id": "e38b0923-c21a-47de-8e24-6ef380bb725d",
+      "type": "text",
+      "x": 1730.3662298828126,
+      "y": -4203.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "属性访问方式",
+      "color": "5"
+    },
+    {
+      "id": "a8975f58-0c31-45ae-9b6e-8cd6b1827790",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": -4283.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "使用点操作符（.）",
+      "color": "5"
+    },
+    {
+      "id": "f2246732-5e9d-43d0-a0fd-a2dd8b36b684",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": -4283.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "ObjectName.propertyName",
+      "color": "5"
+    },
+    {
+      "id": "45c1beff-4e64-4657-b902-91173c4cc5c8",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": -4123.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "使用中括号操作符（[]）",
+      "color": "5"
+    },
+    {
+      "id": "5509ade7-1dc8-4d9d-bb51-46a24e20ac60",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": -4123.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "ObjectName[propertyName]",
+      "color": "5"
+    },
+    {
+      "id": "76960408-d3da-41fe-908c-187212665a6b",
+      "type": "text",
+      "x": 1310.3662298828126,
+      "y": -3426.79298756252,
+      "width": 320,
+      "height": 120,
+      "text": "创建对象",
+      "color": "5"
+    },
+    {
+      "id": "6db4a29f-9231-49ec-b77d-5a6c3e4ec128",
+      "type": "text",
+      "x": 1730.3662298828126,
+      "y": -3963.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "基于Object()构造函数",
+      "color": "5"
+    },
+    {
+      "id": "1ea9da17-fa6f-4035-a510-eb5bdb8d8512",
+      "type": "text",
+      "x": 1730.3662298828126,
+      "y": -3803.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "基于对象字面量",
+      "color": "5"
+    },
+    {
+      "id": "22c61084-23d7-41d5-a6b7-ee499803e206",
+      "type": "text",
+      "x": 1730.3662298828126,
+      "y": -3643.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "基于工厂方法模式",
+      "color": "5"
+    },
+    {
+      "id": "13d01cac-3de0-4cbc-90e3-dd5b8b25c10b",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": -3643.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "工厂方法模式是一种比较重要的设计模式，用于创建对象，旨在抽象出创建对象和属性赋值的过程，只对外暴露出需要设置的属性值",
+      "color": "5"
+    },
+    {
+      "id": "cbb11160-fd7d-4cb9-bea5-44da43601231",
+      "type": "text",
+      "x": 1730.3662298828126,
+      "y": -3483.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "基于构造函数模式",
+      "color": "5"
+    },
+    {
+      "id": "9b67b714-d734-4889-90cc-39a96a691694",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": -3483.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "构造函数是通过this为对象添加属性的，属性值类型可以为基本类型、对象或者函数，然后通过new操作符创建对象的实例",
+      "color": "5"
+    },
+    {
+      "id": "0e7e6f6f-256d-4a7a-b4ce-6f081bff2eb1",
+      "type": "text",
+      "x": 1730.3662298828126,
+      "y": -3323.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "基于原型对象的模式",
+      "color": "5"
+    },
+    {
+      "id": "88fb0cf8-9aa5-4966-b379-cbf6193c8819",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": -3323.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "基于原型对象的模式是将所有的函数和属性都封装在对象的prototype属性上",
+      "color": "5"
+    },
+    {
+      "id": "96fbd428-2aa9-4775-8574-0b1415ae7366",
+      "type": "text",
+      "x": 1730.3662298828126,
+      "y": -3083.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "构造函数和原型混合的模式",
+      "color": "5"
+    },
+    {
+      "id": "3237d8d8-6308-46a7-a9c3-9e55f525e8f1",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": -3163.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "构造函数和原型混合的模式是目前最常见的创建自定义类型对象的方式",
+      "color": "5"
+    },
+    {
+      "id": "c2be2b8d-46d0-478c-8919-983a3dfa1c91",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": -3003.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "构造函数中用于定义实例的属性，原型对象中用于定义实例共享的属性和函数。通过构造函数传递参数，这样每个实例都能拥有自己的属性值，同时实例还能共享函数的引用，最大限度地节省了内存空间。混合模式可谓是集二者之所长",
+      "color": "5"
+    },
+    {
+      "id": "fbac7d6b-b69a-4358-9ede-5a728b742d94",
+      "type": "text",
+      "x": 1730.3662298828126,
+      "y": -2683.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "基于动态原型模式",
+      "color": "5"
+    },
+    {
+      "id": "6778d7d1-dbad-4dd8-b9fd-f1a0a5c33d37",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": -2843.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "动态原型模式是将原型对象放在构造函数内部，通过变量进行控制，只在第一次生成实例的时候进行原型的设置",
+      "color": "5"
+    },
+    {
+      "id": "77cb343f-68f2-4e72-9f5d-6f88f9dccd6f",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": -2683.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "动态原型的模式相当于懒汉模式，只在生成实例时设置原型对象，但是功能与构造函数和原型混合模式是相同的",
+      "color": "5"
+    },
+    {
+      "id": "79a4054b-ac4e-4da3-bffe-421ba15a88ec",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": -2523.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "// 动态原型模式\nfunction Person(name, age, address) {\n\n   this.name = name;\n\n   this.age = age;\n\n   this.address = address;\n\n   // 如果Person对象中_initialized 为undeﬁned，则表明还没有为Person的原型对象添加函数\n\n   if (typeof Person._initialized === \"undeﬁned\") {\n\n       Person.prototype.getName = function () {\n\n           return this.name;\n\n       };\n\n       Person._initialized = true;\n\n   }\n\n}",
+      "color": "5"
+    },
+    {
+      "id": "7104a33b-7f05-4eba-bfb6-7a9baef2d508",
+      "type": "text",
+      "x": 1310.3662298828126,
+      "y": -1777.2691780387113,
+      "width": 320,
+      "height": 120,
+      "text": "对象克隆",
+      "color": "5"
+    },
+    {
+      "id": "c7e4690c-c5f1-44bf-8fbf-88606ec7f372",
+      "type": "text",
+      "x": 1730.3662298828126,
+      "y": -2283.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "定义",
+      "color": "5"
+    },
+    {
+      "id": "f4a7d4bf-d70f-4d5b-978d-c6ac214cb2dc",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": -2363.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "克隆是指通过一定的程序将某个变量的值复制至另一个变量的过程",
+      "color": "5"
+    },
+    {
+      "id": "575b18fb-31e6-4ee6-add1-7b667b880fb4",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": -2203.935844705378,
+      "width": 320,
+      "height": 120,
+      "text": "根据复制后的变量与原始变量值的影响情况，克隆可以分为浅克隆和深克隆两种方式",
+      "color": "5"
+    },
+    {
+      "id": "7a142675-c3b2-4c49-8292-00346ad7d88c",
+      "type": "text",
+      "x": 1730.3662298828126,
+      "y": -1963.9358447053778,
+      "width": 320,
+      "height": 120,
+      "text": "对象浅克隆",
+      "color": "5"
+    },
+    {
+      "id": "7017664a-17f7-4707-802a-6ac329809bb2",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": -2043.9358447053778,
+      "width": 320,
+      "height": 120,
+      "text": "for循环 浅克隆",
+      "color": "5"
+    },
+    {
+      "id": "8db5c023-c7b5-482d-92af-34d9d9ffdb52",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": -2043.9358447053778,
+      "width": 320,
+      "height": 120,
+      "text": "/**\n  * JavaScript实现对象浅克隆——引用复制\n\n */\n\nfunction shallowClone(origin) {\n\n   var result = {};\n\n   // 遍历最外层属性\n\n   for (var key in origin) {\n\n       // 判断是否是对象自身的属性\n\n       if (origin.hasOwnProperty(key)) {\n\n           result[key] = origin[key];\n\n       }\n\n   }\n\n   return result;\n\n}",
+      "color": "5"
+    },
+    {
+      "id": "805bfe7f-805e-455c-a00a-e4d76b020cd2",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": -1883.9358447053778,
+      "width": 320,
+      "height": 120,
+      "text": "Object.assign",
+      "color": "5"
+    },
+    {
+      "id": "697d8c62-9720-4143-92ba-e762a712a9bc",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": -1883.9358447053778,
+      "width": 320,
+      "height": 120,
+      "text": "用于将源对象的可枚举属性复制到目标对象中",
+      "color": "5"
+    },
+    {
+      "id": "1ba65c1b-164a-47ca-98b8-092e13e03acf",
+      "type": "text",
+      "x": 1730.3662298828126,
+      "y": -1083.9358447053778,
+      "width": 320,
+      "height": 120,
+      "text": "对象深克隆",
+      "color": "5"
+    },
+    {
+      "id": "36f567e5-c6a2-4e1e-b2b5-8e64e5aa0116",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": -1563.9358447053778,
+      "width": 320,
+      "height": 120,
+      "text": "JSON序列化和反序列化",
+      "color": "5"
+    },
+    {
+      "id": "67bf1956-584b-4c39-987e-5b6790f9e099",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": -1723.9358447053778,
+      "width": 320,
+      "height": 120,
+      "text": "如果一个对象中的全部属性都是可以序列化的，\n那么我们可以先使用JSON.stringify()函数将原始对象序列化为字符串，\n\n再使用JSON.parse()函数将字符串反序列化为一个对象，\n\n这样得到的对象就是深克隆后的对象",
+      "color": "5"
+    },
+    {
+      "id": "c68f832c-95a8-4af3-badc-ffa4385484a6",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": -1403.9358447053778,
+      "width": 320,
+      "height": 120,
+      "text": "问题",
+      "color": "5"
+    },
+    {
+      "id": "92b96cd2-e234-4a20-bff3-4362c24ef6f6",
+      "type": "text",
+      "x": 2990.3662298828126,
+      "y": -1563.9358447053778,
+      "width": 320,
+      "height": 120,
+      "text": "无法实现对函数、RegExp等特殊对象的克隆",
+      "color": "5"
+    },
+    {
+      "id": "73b33375-05e1-4a6f-8209-9a6a1c9246c8",
+      "type": "text",
+      "x": 2990.3662298828126,
+      "y": -1403.9358447053778,
+      "width": 320,
+      "height": 120,
+      "text": "对象的constructor会被抛弃，所有的构造函数会指向Object，原型链关系断裂",
+      "color": "5"
+    },
+    {
+      "id": "e314e7b7-ac4e-47c5-a3a1-d0b0a688116a",
+      "type": "text",
+      "x": 2990.3662298828126,
+      "y": -1243.9358447053778,
+      "width": 320,
+      "height": 120,
+      "text": "对象中如果存在循环引用，会抛出异常",
+      "color": "5"
+    },
+    {
+      "id": "4b1d18e1-6ff2-44d0-b3db-1858fa13b97f",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": -1003.9358447053778,
+      "width": 320,
+      "height": 120,
+      "text": "自定义实现",
+      "color": "5"
+    },
+    {
+      "id": "153091c6-d452-4bdc-9645-c90d79a76bac",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": -1083.9358447053778,
+      "width": 320,
+      "height": 120,
+      "text": "/**\n * 类型判断\n\n */\n\n(function (_) {\n\n   // 列举出可能存在的数据类型\n\n   var types = 'Array Object String Date RegExp Function Boolean Number Null \n\nUndeﬁned'.split(' ');\n\n   function type() {\n\n       // 通过调用toString()函数，从索引为8时截取字符串，得到数据类型的值\n\n       return Object.prototype.toString.call(this).slice(8, -1);\n\n   }\n\n   for (var i = types.length; i--;) {\n\n        _['is' + types[i]] = (function (self) {\n\n           return function (elem) {\n\n               return type.call(elem) === self;\n\n           };\n\n       })(types[i]);\n\n   }\n\n   return _;\n\n})(_ = {});",
+      "color": "5"
+    },
+    {
+      "id": "2fccd147-9efc-4eef-990a-8c8552b90cec",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": -923.9358447053778,
+      "width": 320,
+      "height": 120,
+      "text": "/**\n  * 深克隆实现方案\n\n  * @param source 待克隆的对象\n\n  * @returns {*} 返回克隆后的对象\n\n  */\n\nfunction deepClone(source) {\n\n   // 维护两个储存循环引用的数组\n\n   var parents = [];\n\n   var children = [];\n\n   // 用于获得正则表达式的修饰符,/igm\n\n   function getRegExp(reg) {\n\n       var result = '';\n\n       if (reg.ignoreCase) {\n\n           result += 'i';\n\n       }\n\n       if (reg.global) {\n\n           result += 'g';\n\n       }\n\n       if (reg.multiline) {\n\n           result += 'm';\n\n   }\n\n       return result;\n\n   }\n\n   // 便于递归的_clone()函数\n\n   function _clone(parent) {\n\n       if (parent === null) return null;\n\n       if (typeof parent !== 'object') return parent;\n\n       var child, proto;\n\n       // 对数组做特殊处理\n\n       if (_.isArray(parent)) {\n\n           child = [];\n\n       } else if (_.isRegExp(parent)) {\n\n           // 对正则对象做特殊处理\n\n           child = new RegExp(parent.source, getRegExp(parent));\n\n           if (parent.lastIndex) child.lastIndex = parent.lastIndex;\n\n       } else if (_.isDate(parent)) {\n\n           // 对Date对象做特殊处理\n\n           child = new Date(parent.getTime());\n\n       } else {\n\n           // 处理对象原型\n\n           proto = Object.getPrototypeOf(parent);\n\n           // 利用Object.create切断原型链\n\n           child = Object.create(proto);\n\n       }\n\n       // 处理循环引用\n\n       var index = parents.indexOf(parent);\n\n       if (index !== -1) {\n\n           // 如果父数组存在本对象，说明之前已经被引用过，直接返回此对象\n\n           return children[index];\n\n       }\n\n       // 没有引用过，则添加至parents和children数组中\n\n       parents.push(parent);\n\n       children.push(child);\n\n       // 遍历对象属性\n\n       for (var prop in parent) {\n\n           if (parent.hasOwnProperty(prop)) {\n\n               // 递归处理\n\n               child[prop] = _clone(parent[prop]);\n\n           }\n\n       }\n\n       return child;\n\n   }\n\n   return _clone(source);\n\n}",
+      "color": "5"
+    },
+    {
+      "id": "0d1407da-9a3c-42c9-a4f2-92f9a68ebc1b",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": -683.9358447053778,
+      "width": 320,
+      "height": 120,
+      "text": "jq实现参考",
+      "color": "5"
+    },
+    {
+      "id": "7f0635cf-636a-4f0e-bff0-4b32ddc07051",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": -763.9358447053778,
+      "width": 320,
+      "height": 120,
+      "text": "jQuery.extend = jQuery.fn.extend = function() {\n    // options是一个缓存变量，用来缓存arguments[i]，\n\n    // name是用来接收将要被扩展对象的key，src改变之前target对象上每个key对应的value\n\n    // copy传入对象上每个key对应的value，copyIsArray判定copy是否为一个数组\n\n    // clone深克隆中用来临时存对象或数组的src\n\n    var src, copyIsArray, copy, name, options, clone,\n\n        target = arguments[0] || {},\n\n        i = 1,\n\n        length = arguments.length,\n\n        deep = false;\n\n     // 如果传递的第一个参数为boolean类型，为true代表深克隆，为false代表浅克隆\n\n    if ( typeof target === \"boolean\" ) {\n\n        deep = target;\n\n        // 如果传递了第一个参数为boolean值，则待克隆的对象为第二个参数\n\n        target = arguments[ i ] || {};\n\n        i++;\n\n    }\n\n    // 如果是简单类型数据\n\n    if ( typeof target !== \"object\" && !jQuery.isFunction(target) ) {\n\n        target = {};\n\n    }\n\n    // 如果只传递一个参数，那么克隆的是jQuery自身\n\n    if ( i === length ) {\n\n        target = this;\n\n        i--;\n\n    }\n\n    for ( ; i < length; i++ ) {\n\n        // 仅需要处理不是null与undeﬁned类型的数据\n\n        if ( (options = arguments[ i ]) != null ) {\n\n            // 遍历对象的所有属性\n\n            for ( name in options ) {\n\n                src = target[ name ];\n\n                copy = options[ name ];\n\n                // 阻止循环引用\n\n                if ( target === copy ) {\n\n                    continue;\n\n                }\n\n                // 递归处理对象和数组\n\n                if ( deep && copy && ( jQuery.isPlainObject(copy)                   || (copyIsArray = jQuery.isArray(copy)) ) ) {\n\n                    if ( copyIsArray ) {\n\n                        copyIsArray = false;\n\n                        clone = src && jQuery.isArray(src) ? src : [];\n\n                    } else {\n\n                        clone = src && jQuery.isPlainObject(src) ? src : {};\n\n                    }\n\n                    // 将原始值的name属性值赋给target目标对象\n\n                    target[ name ] = jQuery.extend( deep, clone, copy );\n\n                } else if ( copy !== undeﬁned ) {\n\n                  // 对于简单类型，直接赋值\n\n                    target[ name ] = copy;\n\n                }\n\n            }\n\n        }\n\n   }\n\n   // 返回clone后的目标对象\n\n   return target;\n\n};",
+      "color": "5"
+    },
+    {
+      "id": "83ca16cc-0100-4e42-89ca-a8a8ce6ab040",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": -603.9358447053778,
+      "width": 320,
+      "height": 120,
+      "text": "无法解决循环引用的问题",
+      "color": "5"
+    },
+    {
+      "id": "9e2a8a26-0ef5-474a-ad95-8f03296bd1bb",
+      "type": "text",
+      "x": 1310.3662298828126,
+      "y": 351.61971085017774,
+      "width": 320,
+      "height": 120,
+      "text": "原型对象",
+      "color": "5"
+    },
+    {
+      "id": "d7abf010-9d91-4506-953e-684139276f45",
+      "type": "text",
+      "x": 1730.3662298828126,
+      "y": -443.9358447053778,
+      "width": 320,
+      "height": 120,
+      "text": "定义",
+      "color": "5"
+    },
+    {
+      "id": "901291e3-3b8c-4123-91cb-4eb2eca4de4e",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": -443.9358447053778,
+      "width": 320,
+      "height": 120,
+      "text": "每一个函数在创建时都会被赋予一个prototype属性，它指向函数的原型对象，这个对象可以包含所有实例共享的属性和函数",
+      "color": "5"
+    },
+    {
+      "id": "f0846bf4-5f75-46a3-ba76-dd4ed3fc00f4",
+      "type": "text",
+      "x": 1730.3662298828126,
+      "y": 182.73082196128883,
+      "width": 320,
+      "height": 120,
+      "text": "原型对象、构造函数、实例之间的关系",
+      "color": "5"
+    },
+    {
+      "id": "fe46e24c-ca84-48f2-984e-38cda67f2428",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": -283.9358447053778,
+      "width": 320,
+      "height": 120,
+      "text": "每一个函数在创建时都会被赋予一个prototype属性，prototype属性指向原型对象",
+      "color": "5"
+    },
+    {
+      "id": "60d73b14-abd8-4976-ba63-56fa34a1d3f8",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": -123.9358447053778,
+      "width": 320,
+      "height": 120,
+      "text": "所有的原型对象都会增加一个constructor属性，指向prototype属性所在的函数，即构造函数",
+      "color": "5"
+    },
+    {
+      "id": "0b04a8e4-46f8-4567-92ca-67e4d01aac7e",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": 36.064155294622196,
+      "width": 320,
+      "height": 120,
+      "text": "通过new操作符调用构造函数创建一个实例时，实例具有一个__proto__属性，指向构造函数的原型对象，因此__proto__属性可以看作是一个连接实例与构造函数的原型对象的桥梁",
+      "color": "5"
+    },
+    {
+      "id": "57dfd772-32bc-43c8-af38-5fa0a115d6c3",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": 276.0641552946222,
+      "width": 320,
+      "height": 120,
+      "text": "举例",
+      "color": "5"
+    },
+    {
+      "id": "2baebeb3-dcb9-4a98-b0ff-892b9ec6d0db",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 196.0641552946222,
+      "width": 320,
+      "height": 120,
+      "text": "代码",
+      "color": "5"
+    },
+    {
+      "id": "bb8fdbac-cc23-4845-a3e9-985458190c72",
+      "type": "text",
+      "x": 2990.3662298828126,
+      "y": 196.0641552946222,
+      "width": 320,
+      "height": 120,
+      "text": "function Person(){}\nPerson.prototype.name = 'Nicholas';\n\nPerson.prototype.age = 29;\n\nPerson.prototype.job = 'Software Engineer';\n\nPerson.prototype.sayName = function(){\n\n   console.log(this.name);\n\n};\n\nvar person1 = new Person();\n\nvar person2 = new Person();",
+      "color": "5"
+    },
+    {
+      "id": "00023456-254a-4ee1-b4f1-033cd2a80061",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 356.0641552946222,
+      "width": 320,
+      "height": 120,
+      "text": "关系图",
+      "color": "5"
+    },
+    {
+      "id": "0d1702eb-e6d4-4308-ae7d-014d1d0ebe41",
+      "type": "text",
+      "x": 2990.3662298828126,
+      "y": 356.0641552946222,
+      "width": 320,
+      "height": 120,
+      "text": "0d1702eb-e6d4-4308-ae7d-014d1d0ebe41",
+      "color": "5"
+    },
+    {
+      "id": "34112307-66d3-4de7-963b-79e93f188ffc",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": 516.0641552946222,
+      "width": 320,
+      "height": 120,
+      "text": "属性读取顺序",
+      "color": "5"
+    },
+    {
+      "id": "c28b41e3-f9dc-4d48-93a8-dceccd57da07",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 516.0641552946222,
+      "width": 320,
+      "height": 120,
+      "text": "当我们通过对象的实例读取某个属性时，是有一个搜索过程的。它会先在实例本身去找指定的属性，如果找到了，则直接返回该属性的值；如果没找到，则会继续沿着原型对象寻找；如果在原型对象中找到了该属性，则返回该属性的值",
+      "color": "5"
+    },
+    {
+      "id": "d8e706fe-b46c-4954-b44e-aefa4919b56d",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": 676.0641552946222,
+      "width": 320,
+      "height": 120,
+      "text": "重写原型对象",
+      "color": "5"
+    },
+    {
+      "id": "d6eb73ca-f9c7-4f54-942b-601d0e397a41",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 676.0641552946222,
+      "width": 320,
+      "height": 120,
+      "text": "将一个对象字面量赋给prototype属性的方式实际是重写了原型对象，\n等同于切断了构造函数和最初原型之间的关系",
+      "color": "5"
+    },
+    {
+      "id": "c7104a07-8b18-466b-b46e-e50b25765c14",
+      "type": "text",
+      "x": 2990.3662298828126,
+      "y": 676.0641552946222,
+      "width": 320,
+      "height": 120,
+      "text": "因此有一点需要注意的是，如果仍然想使用constructor属性做后续处理，则应该在对象字面量中增加一个constructor属性，指向构造函数本身，否则原型的constructor属性会指向Object类型的构造函数，从而导致constructor属性与构造函数的脱离",
+      "color": "5"
+    },
+    {
+      "id": "adf8b5cf-415d-4968-9859-d109dcef5e44",
+      "type": "text",
+      "x": 1730.3662298828126,
+      "y": 1316.0641552946222,
+      "width": 320,
+      "height": 120,
+      "text": "原型链",
+      "color": "5"
+    },
+    {
+      "id": "fedd2c28-c94b-42e2-8185-45c10da8c528",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": 916.0641552946222,
+      "width": 320,
+      "height": 120,
+      "text": "定义",
+      "color": "5"
+    },
+    {
+      "id": "7c37398b-46cf-46ba-b1e6-6459dc43c0d0",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 836.0641552946222,
+      "width": 320,
+      "height": 120,
+      "text": "对象的每个实例都具有一个__proto__属性，指向的是构造函数的原型对象，而原型对象同样存在一个__proto__属性指向上一级构造函数的原型对象，就这样层层往上，直到最上层某个原型对象为null",
+      "color": "5"
+    },
+    {
+      "id": "4e139b85-c93c-4696-b4cc-ab29fc085ab3",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 996.0641552946222,
+      "width": 320,
+      "height": 120,
+      "text": "原型链关系图",
+      "color": "5"
+    },
+    {
+      "id": "485a3f79-6aea-43f5-8a73-7202bdd3a0cf",
+      "type": "text",
+      "x": 2990.3662298828126,
+      "y": 996.0641552946222,
+      "width": 320,
+      "height": 120,
+      "text": "485a3f79-6aea-43f5-8a73-7202bdd3a0cf",
+      "color": "5"
+    },
+    {
+      "id": "daa96832-6b91-413f-91b0-1691f3e869e1",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": 1236.0641552946222,
+      "width": 320,
+      "height": 120,
+      "text": "特点",
+      "color": "5"
+    },
+    {
+      "id": "431a7ad9-b302-43a6-8cfe-9d96f2309b25",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 1156.0641552946222,
+      "width": 320,
+      "height": 120,
+      "text": "由于原型链的存在，属性查找的过程不再是只查找自身的原型对象，而是会沿着整个原型链一直向上，直到追溯到Object.prototype。如果Object.prototype上也找不到该属性，则返回“undefined”",
+      "color": "5"
+    },
+    {
+      "id": "068b7cf6-a8a2-4412-afa1-847a3d3e24e5",
+      "type": "text",
+      "x": 2990.3662298828126,
+      "y": 1156.0641552946222,
+      "width": 320,
+      "height": 120,
+      "text": "如果期间在实例本身或者某个原型对象上找到了该属性，则会直接返回结果，因此会存在属性覆盖的问题",
+      "color": "5"
+    },
+    {
+      "id": "e8d1a525-b2fb-4c68-9c7f-13f45c0fc935",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 1316.0641552946222,
+      "width": 320,
+      "height": 120,
+      "text": "由于属性查找会经历整个原型链，因此查找的链路越长，对性能的影响越大",
+      "color": "5"
+    },
+    {
+      "id": "496352b9-7420-4c4b-aec3-c97efa07a184",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": 1476.0641552946222,
+      "width": 320,
+      "height": 120,
+      "text": "属性区分",
+      "color": "5"
+    },
+    {
+      "id": "da0e5dfb-6c1b-46e6-a58b-ce634889433f",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 1476.0641552946222,
+      "width": 320,
+      "height": 120,
+      "text": "区分属性是实例自身的还是从原型链中继承的",
+      "color": "5"
+    },
+    {
+      "id": "f8b0e6a8-6890-4aea-80d0-48d4f126d455",
+      "type": "text",
+      "x": 2990.3662298828126,
+      "y": 1476.0641552946222,
+      "width": 320,
+      "height": 120,
+      "text": "Object.prototype.hasOwnProperty()，用于判断属性是否为自身拥有的",
+      "color": "5"
+    },
+    {
+      "id": "d83a58ce-03db-4690-8071-b3f52986e1f2",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": 1636.0641552946222,
+      "width": 320,
+      "height": 120,
+      "text": "内置构造函数",
+      "color": "5"
+    },
+    {
+      "id": "e4eef8e8-11c6-49d5-a1f4-7bce22b3076e",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 1636.0641552946222,
+      "width": 320,
+      "height": 120,
+      "text": "JavaScript中有一些特定的内置构造函数，如String()构造函数、Number()构造函数、Array()构造函数、Object()构造函数等",
+      "color": "5"
+    },
+    {
+      "id": "f0ea57a0-995e-4c06-8b32-ebb1b7139daf",
+      "type": "text",
+      "x": 2990.3662298828126,
+      "y": 1636.0641552946222,
+      "width": 320,
+      "height": 120,
+      "text": "它们本身的__proto__属性都统一指向Function.prototype",
+      "color": "5"
+    },
+    {
+      "id": "0d6bc452-7f47-4951-ab25-a2b012a2a7ff",
+      "type": "text",
+      "x": 1310.3662298828126,
+      "y": 4484.064155294623,
+      "width": 320,
+      "height": 120,
+      "text": "继承",
+      "color": "5"
+    },
+    {
+      "id": "9c9a9f00-781f-4fc2-97e6-c898b2e3912c",
+      "type": "text",
+      "x": 1730.3662298828126,
+      "y": 2196.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "原型链继承",
+      "color": "5"
+    },
+    {
+      "id": "ee361c9f-bf64-4ed9-a30c-dee0eae2aa11",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": 1796.0641552946222,
+      "width": 320,
+      "height": 120,
+      "text": "实现",
+      "color": "5"
+    },
+    {
+      "id": "74cb6b52-1160-4eaa-b51c-2d236e28d7b6",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 1796.0641552946222,
+      "width": 320,
+      "height": 120,
+      "text": "重写子类的prototype属性，将其指向父类的实例",
+      "color": "5"
+    },
+    {
+      "id": "53769872-8139-444e-bdef-9f640d34ffab",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": 2116.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "优点",
+      "color": "5"
+    },
+    {
+      "id": "729199c7-8d8f-4735-a487-b4035c7a7280",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 1956.0641552946222,
+      "width": 320,
+      "height": 120,
+      "text": "简单，易于实现",
+      "color": "5"
+    },
+    {
+      "id": "618e0331-b2e7-4756-abd7-e13978520f0b",
+      "type": "text",
+      "x": 2990.3662298828126,
+      "y": 1956.0641552946222,
+      "width": 320,
+      "height": 120,
+      "text": "只需要设置子类的prototype属性为父类的实例",
+      "color": "5"
+    },
+    {
+      "id": "0cd756e3-d9e5-45bc-9ed4-49480e270bd0",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 2116.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "继承关系纯粹",
+      "color": "5"
+    },
+    {
+      "id": "09c148ca-f599-4316-a85f-2780adc7ced0",
+      "type": "text",
+      "x": 2990.3662298828126,
+      "y": 2116.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "生成的实例既是子类的实例，也是父类的实例",
+      "color": "5"
+    },
+    {
+      "id": "1ae645b1-3312-46f6-a772-03793ab1d891",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 2276.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "可通过子类直接访问父类原型链属性和函数",
+      "color": "5"
+    },
+    {
+      "id": "00065301-0992-4e20-9f3c-d7e7fe81cbec",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": 2676.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "缺点",
+      "color": "5"
+    },
+    {
+      "id": "5ca47095-9843-40ff-a192-125e183ee931",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 2436.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "子类的所有实例将共享父类的属性",
+      "color": "5"
+    },
+    {
+      "id": "3754224b-6c56-4dd5-b1e6-b9380ab6a781",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 2596.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "在创建子类实例时，无法向父类的构造函数传递参数",
+      "color": "5"
+    },
+    {
+      "id": "a4c4176d-9c42-41df-851a-3538930e3ca9",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 2756.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "无法实现多继承",
+      "color": "5"
+    },
+    {
+      "id": "70d30335-52a0-4f92-9b7d-77ba210169d0",
+      "type": "text",
+      "x": 2990.3662298828126,
+      "y": 2756.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "子类的prototype属性只能设置为一个值，如果同时设置为多个值的话，后面的值会覆盖前面的值，导致Cat只能继承一个父类，而无法实现多继承。",
+      "color": "5"
+    },
+    {
+      "id": "0f0add35-8054-449b-b121-ac4945384bb2",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 2916.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "为子类增加原型对象上的属性和函数时，必须放在new 子类构造函数之后",
+      "color": "5"
+    },
+    {
+      "id": "b7bc9b65-876f-4862-a45b-ae4a5d551d5f",
+      "type": "text",
+      "x": 2990.3662298828126,
+      "y": 2916.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "因为如果在这个语句之前设置了prototype属性，后面执行的语句会直接重写prototype属性，导致之前设置的全部失效",
+      "color": "5"
+    },
+    {
+      "id": "6582bfe8-76cb-4470-8c01-6cdac4ce13ae",
+      "type": "text",
+      "x": 1730.3662298828126,
+      "y": 3449.3974886279557,
+      "width": 320,
+      "height": 120,
+      "text": "构造继承",
+      "color": "5"
+    },
+    {
+      "id": "60e9532c-35c0-40b9-babf-e40b43c63096",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": 3076.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "实现",
+      "color": "5"
+    },
+    {
+      "id": "1052f86c-ad6c-40e1-a8db-d314e7fb76ce",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 3076.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "在子类的构造函数中通过call()函数改变this的指向，调用父类的构造函数，从而能将父类的实例的属性和函数绑定到子类的this上",
+      "color": "5"
+    },
+    {
+      "id": "8062b2ca-743a-4d99-bece-3cff872e148e",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": 3396.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "优点",
+      "color": "5"
+    },
+    {
+      "id": "ac410634-ae63-43ea-8d5c-52c2d0e913f7",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 3236.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "可解决子类实例共享父类属性的问题",
+      "color": "5"
+    },
+    {
+      "id": "9e72a4c2-7169-422b-9892-292732497c3a",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 3396.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "创建子类的实例时，可以向父类传递参数",
+      "color": "5"
+    },
+    {
+      "id": "3518221b-c942-4eb3-a95e-c22b8aa65ddc",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 3556.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "可以实现多继承",
+      "color": "5"
+    },
+    {
+      "id": "c011a682-98c7-4786-9136-0403f5c20186",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": 3876.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "缺点",
+      "color": "5"
+    },
+    {
+      "id": "3450ec46-5500-4076-b45b-4bc399f11f7a",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 3716.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "实例只是子类的实例，并不是父类的实例",
+      "color": "5"
+    },
+    {
+      "id": "5d53b5e1-4696-4d41-91e2-1bc1b85f6860",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 3876.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "只能继承父类实例的属性和函数，并不能继承原型对象上的属性和函数",
+      "color": "5"
+    },
+    {
+      "id": "8def672b-606f-438c-8a2a-820e15f95e83",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 4036.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "无法复用父类的实例函数",
+      "color": "5"
+    },
+    {
+      "id": "a3b486c6-15ed-41f0-90c4-6c735a952523",
+      "type": "text",
+      "x": 1730.3662298828126,
+      "y": 4542.730821961289,
+      "width": 320,
+      "height": 120,
+      "text": "复制继承",
+      "color": "5"
+    },
+    {
+      "id": "27ec7cc3-ef9a-4e03-92a0-821ad90c3019",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": 4196.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "实现",
+      "color": "5"
+    },
+    {
+      "id": "a83735a8-d895-4542-9a73-b433aa343875",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 4196.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "先生成父类的实例，然后通过for...in遍历父类实例的属性和函数，并将其依次设置为子类实例的属性和函数或者原型对象上的属性和函数",
+      "color": "5"
+    },
+    {
+      "id": "02493d29-2ed2-4549-84c6-cfbd4176f7ff",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": 4516.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "优点",
+      "color": "5"
+    },
+    {
+      "id": "d29622cd-a7f0-4eaf-bdce-6fcea9a4919c",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 4356.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "支持多继承",
+      "color": "5"
+    },
+    {
+      "id": "82246083-698d-4cb3-8a5f-1b74330e26d1",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 4516.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "能同时继承实例的属性和函数与原型对象上的属性和函数",
+      "color": "5"
+    },
+    {
+      "id": "9eb7c709-cd84-4c44-803e-3563e1cec58f",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 4676.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "可以向父类构造函数中传递值",
+      "color": "5"
+    },
+    {
+      "id": "12347d0c-1ffc-40e8-8591-0dcf10deb074",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": 4916.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "缺点",
+      "color": "5"
+    },
+    {
+      "id": "b9dc8352-46f2-432b-beee-1607ffc99fcb",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 4836.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "父类的所有属性都需要复制，消耗内存",
+      "color": "5"
+    },
+    {
+      "id": "3b445442-f26e-4275-b138-055e862ac040",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 4996.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "实例只是子类的实例，并不是父类的实例",
+      "color": "5"
+    },
+    {
+      "id": "eb684de8-75a2-4360-87c3-75a685d72f06",
+      "type": "text",
+      "x": 1730.3662298828126,
+      "y": 5716.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "组合继承",
+      "color": "5"
+    },
+    {
+      "id": "2c618c75-2b93-44f5-8ed1-66c11ff4f0fa",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": 5236.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "实现",
+      "color": "5"
+    },
+    {
+      "id": "2012c6fa-8bbf-4602-b451-5c2fd37bcf2f",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 5236.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "组合了构造继承和原型继承两种方法",
+      "color": "5"
+    },
+    {
+      "id": "50769088-cf65-460a-b407-dfc72363c305",
+      "type": "text",
+      "x": 2990.3662298828126,
+      "y": 5156.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "一方面在子类的构造函数中通过call()函数调用父类的构造函数，将父类的实例的属性和函数绑定到子类的this中",
+      "color": "5"
+    },
+    {
+      "id": "14821aba-8431-44a4-9184-bd43b9111d6e",
+      "type": "text",
+      "x": 2990.3662298828126,
+      "y": 5316.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "另一方面，通过改变子类的prototype属性，继承父类的原型对象上的属性和函数",
+      "color": "5"
+    },
+    {
+      "id": "10a55456-b63c-443e-986f-dbeb26c038a9",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": 5716.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "优点",
+      "color": "5"
+    },
+    {
+      "id": "16525fd8-db81-4bf3-9edb-1fed53f0834c",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 5476.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "既能继承父类实例的属性和函数，又能继承原型对象上的属性和函数",
+      "color": "5"
+    },
+    {
+      "id": "1aa25b7f-8d45-4c3d-9c55-64482d48a51b",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 5636.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "既是子类的实例，又是父类的实例",
+      "color": "5"
+    },
+    {
+      "id": "e621a7c2-d882-4475-877d-477f97725b22",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 5796.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "不存在引用属性共享的问题",
+      "color": "5"
+    },
+    {
+      "id": "0434a0e4-cbd6-4f97-8d6f-bd3d0f006133",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 5956.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "可以向父类的构造函数中传递参数",
+      "color": "5"
+    },
+    {
+      "id": "281b2365-bcef-4e6a-9418-06aea989ed84",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": 6196.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "缺点",
+      "color": "5"
+    },
+    {
+      "id": "a2e9013b-ab61-42b9-a9e9-6f44c2366b1f",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 6196.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "父类的实例属性会绑定两次",
+      "color": "5"
+    },
+    {
+      "id": "8512f40b-4c34-4f66-86c1-8c2536e0b58d",
+      "type": "text",
+      "x": 2990.3662298828126,
+      "y": 6116.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "在子类的构造函数中，通过call()函数调用了一次父类的构造函数；在改写子类的prototype属性、生成父类的实例时调用了一次父类的构造函数",
+      "color": "5"
+    },
+    {
+      "id": "685bc2ef-2b95-40b9-8f22-20aaf8ecbf82",
+      "type": "text",
+      "x": 2990.3662298828126,
+      "y": 6276.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "通过两次调用，父类实例的属性和函数会进行两次绑定，一次会绑定到子类的构造函数的this中，即实例属性和函数，另一次会绑定到子类的prototype属性中，即原型对象上的属性和函数，但是实例属性优先级会比原型对象上的属性优先级高，因此实例属性会覆盖原型对象上的属性",
+      "color": "5"
+    },
+    {
+      "id": "b5abf7c0-ba25-4b56-b66d-3dffe4eca2be",
+      "type": "text",
+      "x": 1730.3662298828126,
+      "y": 6516.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "寄生组合继承",
+      "color": "5"
+    },
+    {
+      "id": "8cf2f337-545f-4ca1-b95f-209f2a896dd7",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": 6516.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "实现",
+      "color": "5"
+    },
+    {
+      "id": "eced3b8b-623a-4f09-9f7e-aec8f4d74b03",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 6516.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "在组合继承方案的基础上，避免了父类的实例属性绑定两次",
+      "color": "5"
+    },
+    {
+      "id": "efd68e59-1d7f-4aed-8a72-c437d9aa1dba",
+      "type": "text",
+      "x": 2990.3662298828126,
+      "y": 6436.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "实现代码",
+      "color": "5"
+    },
+    {
+      "id": "6a7cd445-a81a-4f68-b313-3ee03e1dcce0",
+      "type": "text",
+      "x": 3410.3662298828126,
+      "y": 6436.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "// 子类\nfunction Cat(name) {\n\n   // 继承父类的实例属性和函数\n\n   Animal.call(this);\n\n   this.name = name;\n\n}\n\n// 立即执行函数\n\n(function () {\n\n   // 设置任意函数Super()\n\n   var Super = function () {};\n\n   // 关键语句，Super()函数的原型指向父类Animal的原型，去掉父类的实例属性\n\n   Super.prototype = Animal.prototype;\n\n   Cat.prototype = new Super();\n\n   Cat.prototype.constructor = Cat;\n\n})();",
+      "color": "5"
+    },
+    {
+      "id": "01e1e723-3a05-4013-b53f-18708ea198d5",
+      "type": "text",
+      "x": 2990.3662298828126,
+      "y": 6596.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "通过：Super.prototype = Animal.prototype，只取父类Animal的prototype属性，过滤掉Animal的实例属性，从而避免了父类的实例属性绑定两次",
+      "color": "5"
+    },
+    {
+      "id": "df10a289-2499-4089-91de-1ef5808f819a",
+      "type": "text",
+      "x": 1310.3662298828126,
+      "y": 7096.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "instanceof",
+      "color": "5"
+    },
+    {
+      "id": "0ec5887b-8f52-4c0c-b831-319c906e2080",
+      "type": "text",
+      "x": 1730.3662298828126,
+      "y": 6756.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "语法",
+      "color": "5"
+    },
+    {
+      "id": "24d23cda-6112-46c0-a9d0-ecea74f8fd05",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": 6756.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "target instanceof constructor",
+      "color": "5"
+    },
+    {
+      "id": "f9426aac-c462-4d87-aec4-297198763d18",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 6756.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "构造函数constructor()的prototype属性是否出现在target对象的原型链中",
+      "color": "5"
+    },
+    {
+      "id": "5cddc767-113c-4a94-812c-d7e61fe4662c",
+      "type": "text",
+      "x": 2990.3662298828126,
+      "y": 6756.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "说得通俗一点就是，target对象是不是构造函数constructor()的实例",
+      "color": "5"
+    },
+    {
+      "id": "c68fa97b-5e77-4940-8347-173797603e1d",
+      "type": "text",
+      "x": 1730.3662298828126,
+      "y": 7436.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "复杂用法",
+      "color": "5"
+    },
+    {
+      "id": "f594c639-9605-47b8-9398-f2f7198795c8",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": 6916.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "举例",
+      "color": "5"
+    },
+    {
+      "id": "38583a68-bcd7-476b-8d87-2289d651ec47",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 6916.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "Object instanceof Object;  //true\nFunction instanceof Function;  //true\n\nNumber instanceof Number;  //false\n\nString instanceof String;  //false\n\nFunction instanceof Object;  //true\n\nFoo instanceof Function;  //true\n\nFoo instanceof Foo;  //false",
+      "color": "5"
+    },
+    {
+      "id": "353f375f-a2d4-4daa-ae69-b35421e59805",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": 7276.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "实现原理",
+      "color": "5"
+    },
+    {
+      "id": "18ada666-a07e-4452-ad41-06283fd8c1bd",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 7076.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "代码",
+      "color": "5"
+    },
+    {
+      "id": "b602ba5b-4dd9-424c-8ded-8f88f8fec0a1",
+      "type": "text",
+      "x": 2990.3662298828126,
+      "y": 7076.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "/**\n * instanceof 运算符实现原理\n\n * @param L 表示左表达式\n\n * @param R 表示右表达式\n\n * @returns {boolean}\n\n */\n\nfunction instance_of(L, R) {\n\n   var O = R.prototype; // 取 R 的显示原型\n\n   L = L._ _proto_ _; // 取 L 的隐式原型\n\n   while (true) {\n\n       if (L === null)\n\n           return false;\n\n       if (O === L) // 这里是重点：当 O 严格等于 L 时，返回“true”\n\n           return true;\n\n       L = L._ _proto_ _;  // 如果不相等则重新取L的隐式原型\n\n   }\n\n}",
+      "color": "5"
+    },
+    {
+      "id": "39320182-4b74-4633-ab90-ed9a84b1b279",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 7476.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "具体步骤",
+      "color": "5"
+    },
+    {
+      "id": "1b1c42f8-ef38-4655-8987-0389a3ada965",
+      "type": "text",
+      "x": 2990.3662298828126,
+      "y": 7236.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "获取右表达式R的prototype属性为O，左表达式的__proto__隐式原型为L",
+      "color": "5"
+    },
+    {
+      "id": "fd4d3d46-22ea-4eae-a476-4d8ccdc35730",
+      "type": "text",
+      "x": 2990.3662298828126,
+      "y": 7396.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "首先判断左表达式__proto__隐式原型L是否为空，如果为空，则直接返回“false”。实际上只有Object.prototype.__proto__属性为null，即到了原型链的最顶层",
+      "color": "5"
+    },
+    {
+      "id": "c37de5dd-c510-47af-8cb3-d83db1ec21eb",
+      "type": "text",
+      "x": 2990.3662298828126,
+      "y": 7556.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "然后判断O与L是否严格相等，需要注意的是只有在严格相等的时候，才返回“true”",
+      "color": "5"
+    },
+    {
+      "id": "1d51add5-9ae5-4ce6-9e77-38244dfe656a",
+      "type": "text",
+      "x": 2990.3662298828126,
+      "y": 7716.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "如果不相等，则递归L的__proto__属性，直到L为null或者O===L，得到最终结果",
+      "color": "5"
+    },
+    {
+      "id": "632526a1-6dd1-42dd-a293-e08340a5ae07",
+      "type": "text",
+      "x": 2150.3662298828126,
+      "y": 8116.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "复杂用法的详细处理过程",
+      "color": "5"
+    },
+    {
+      "id": "b61fd898-b032-45f3-a2e0-1704c6603dcd",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 7876.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "Object instanceof Object",
+      "color": "5"
+    },
+    {
+      "id": "963682cc-3403-4ddc-8f48-bc4de9ca614e",
+      "type": "text",
+      "x": 2990.3662298828126,
+      "y": 7876.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "// 将左、右侧值进行赋值\nObjectL = Object, ObjectR = Object;\n\n// 根据原理获取对应值\n\nL = ObjectL._ _proto_ _ = Function.prototype;\n\nR = ObjectR.prototype;\n\n// 执行第一次判断\n\nL != R;\n\n// 继续寻找L._ _pro_ _\n\nL = L._ _proto_ _ = Function.prototype._ _proto_ _ = Object.prototype;\n\n// 执行第二次判断\n\nL === R;",
+      "color": "5"
+    },
+    {
+      "id": "c8e3673e-1ee0-4c8a-8710-b1299c939a1d",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 8036.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "Function instanceof Function",
+      "color": "5"
+    },
+    {
+      "id": "16455a75-329b-4c38-9b14-4ab61eec2df9",
+      "type": "text",
+      "x": 2990.3662298828126,
+      "y": 8036.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "// 将左、右侧值进行赋值\nFunctionL = Function, FunctionR = Function;\n\n// 根据原理获取对应值\n\nL = FunctionL._ _proto_ _ = Function.prototype;\n\nR = FunctionR.prototype = Function.prototype;\n\n// 执行第一次判断成功，返回“true”\n\nL === R;",
+      "color": "5"
+    },
+    {
+      "id": "ac2ec55f-65a4-47ec-8ea5-c8e913cb4013",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 8196.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "Foo instanceof Foo",
+      "color": "5"
+    },
+    {
+      "id": "be8c9be4-2881-4eaf-85a5-1aba8a1e9a13",
+      "type": "text",
+      "x": 2990.3662298828126,
+      "y": 8196.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "// 将左、右侧值进行赋值\nFooL = Foo, FooR = Foo;\n\n// 根据原理获取对应值\n\nL = FooL._ _proto_ _ = Function.prototype;\n\nR = FooR.prototype = Foo.prototype;\n\n// 第一次判断失败，返回“false”\n\nL !== R;\n\n// 继续寻找L._ _proto_ _\n\nL = L._ _proto_ _ = Function.prototype._ _proto_ _ = Object.prototype;\n\n// 第二次判断失败，返回“false”\n\nL !== R;\n\n// 继续寻找L._ _proto_ _\n\nL = L._ _proto_ _ = Object.prototype._ _proto_ _ = null;\n\n// L为null,返回“false”\n\nL === null;",
+      "color": "5"
+    },
+    {
+      "id": "c77c8c7e-73db-47f6-8ca3-d52227cecff0",
+      "type": "text",
+      "x": 2570.3662298828126,
+      "y": 8356.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "String instanceof String",
+      "color": "5"
+    },
+    {
+      "id": "07bae4fe-a4b2-40e3-92af-60ae8e84e802",
+      "type": "text",
+      "x": 2990.3662298828126,
+      "y": 8356.064155294622,
+      "width": 320,
+      "height": 120,
+      "text": "// 将左、右侧值进行赋值\nStringL = String, StringR = String;\n\n// 根据原理获取对应值\n\nL = StringL._ _proto_ _ = Function.prototype;\n\nR = StringR.prototype = String.prototype;\n\n// 第一次判断失败，返回“false”\n\nL !== R;\n\n// 继续寻找L._ _proto_ _\n\nL = L._ _proto_ _ = Function.prototype._ _proto_ _ = Object.prototype;\n\n// 第二次判断失败，返回“false”\n\nL !== R;\n\n// 继续寻找L._ _proto_ _\n\nL = L._ _proto_ _ = Object.prototype._ _proto_ _ = null;\n\n// L为null，返回“false”\n\nL === null;",
+      "color": "5"
+    }
+  ],
+  "edges": [
+    {
+      "id": "909fedf8fdca41b9afa5816101291538",
+      "fromNode": "cbed35ae-b714-4cac-9a62-3dc607391d4e",
+      "fromSide": "right",
+      "toNode": "2c6fa958-0eb1-4920-8785-c614894973a3",
+      "toSide": "left"
+    },
+    {
+      "id": "6cf1c0cdbb84411fa620b9ece1772055",
+      "fromNode": "2c6fa958-0eb1-4920-8785-c614894973a3",
+      "fromSide": "right",
+      "toNode": "a1602bb1-1b79-40c5-abd9-bf5adf1ef8c4",
+      "toSide": "left"
+    },
+    {
+      "id": "5b550f6a006045b1b38cab2cc252095e",
+      "fromNode": "a1602bb1-1b79-40c5-abd9-bf5adf1ef8c4",
+      "fromSide": "right",
+      "toNode": "dfda0f48-049f-4f23-861b-c56e036912e2",
+      "toSide": "left"
+    },
+    {
+      "id": "8bcc68e91a454753af5b6834ea468b05",
+      "fromNode": "dfda0f48-049f-4f23-861b-c56e036912e2",
+      "fromSide": "right",
+      "toNode": "7c6cc51c-a1e9-4464-94a2-0944d2204dc1",
+      "toSide": "left"
+    },
+    {
+      "id": "e4bc4582fbb74e3eb28526def1f883e3",
+      "fromNode": "7c6cc51c-a1e9-4464-94a2-0944d2204dc1",
+      "fromSide": "right",
+      "toNode": "f5b978a4-947e-4844-8607-b4e17f6649e9",
+      "toSide": "left"
+    },
+    {
+      "id": "4c67ae4eb47145338a9f19a487b2e611",
+      "fromNode": "f5b978a4-947e-4844-8607-b4e17f6649e9",
+      "fromSide": "right",
+      "toNode": "5f5d2e17-9078-4fb5-9ce1-13edd15189cd",
+      "toSide": "left"
+    },
+    {
+      "id": "d9021a7ca412474f82349265b5181348",
+      "fromNode": "7c6cc51c-a1e9-4464-94a2-0944d2204dc1",
+      "fromSide": "right",
+      "toNode": "fd0dbe91-559a-4111-9e63-d1e4ef7ffa34",
+      "toSide": "left"
+    },
+    {
+      "id": "f1aa0e9ab23046bc9a744722d50b076e",
+      "fromNode": "fd0dbe91-559a-4111-9e63-d1e4ef7ffa34",
+      "fromSide": "right",
+      "toNode": "6c46d3fd-5b95-48af-b506-6753f05e5fa8",
+      "toSide": "left"
+    },
+    {
+      "id": "91867760222b470ebb4fcc4d74502417",
+      "fromNode": "7c6cc51c-a1e9-4464-94a2-0944d2204dc1",
+      "fromSide": "right",
+      "toNode": "505bcd3c-7514-4ace-804f-eea8d0d7ce1a",
+      "toSide": "left"
+    },
+    {
+      "id": "cac9dc09ee934428b0a8150c1ddc0b42",
+      "fromNode": "505bcd3c-7514-4ace-804f-eea8d0d7ce1a",
+      "fromSide": "right",
+      "toNode": "5350fcbb-1a6e-4da0-90b7-14067dcc989c",
+      "toSide": "left"
+    },
+    {
+      "id": "b14d6f92eac648a2ae9fe1913fce9c80",
+      "fromNode": "7c6cc51c-a1e9-4464-94a2-0944d2204dc1",
+      "fromSide": "right",
+      "toNode": "4785211d-37d3-42d5-8ff8-2ce42ceaf97d",
+      "toSide": "left"
+    },
+    {
+      "id": "18025836437341749f588a8b7cfe8ee7",
+      "fromNode": "4785211d-37d3-42d5-8ff8-2ce42ceaf97d",
+      "fromSide": "right",
+      "toNode": "bd2dcac0-b3ad-4b52-8b0d-f6ea169fb84b",
+      "toSide": "left"
+    },
+    {
+      "id": "0fb77d2ed81d4d11adff04494b07debd",
+      "fromNode": "dfda0f48-049f-4f23-861b-c56e036912e2",
+      "fromSide": "right",
+      "toNode": "954ae4b8-90e7-4e53-9221-d186e6e3d5e7",
+      "toSide": "left"
+    },
+    {
+      "id": "f515f7d0fdb54d5d9cca07a0befb6342",
+      "fromNode": "a1602bb1-1b79-40c5-abd9-bf5adf1ef8c4",
+      "fromSide": "right",
+      "toNode": "16227057-5ed7-409a-970c-0cd3468e1c3c",
+      "toSide": "left"
+    },
+    {
+      "id": "e70cc0881c6f4edeaf0ed28a027697c4",
+      "fromNode": "16227057-5ed7-409a-970c-0cd3468e1c3c",
+      "fromSide": "right",
+      "toNode": "38a368a2-6797-498a-b72e-355e2e45283b",
+      "toSide": "left"
+    },
+    {
+      "id": "991e8b8693c44900b06495feb1f41731",
+      "fromNode": "38a368a2-6797-498a-b72e-355e2e45283b",
+      "fromSide": "right",
+      "toNode": "db599f0f-10ae-4031-85f8-5f7505b3828f",
+      "toSide": "left"
+    },
+    {
+      "id": "048aa603340a439f897b0ec16a10adde",
+      "fromNode": "db599f0f-10ae-4031-85f8-5f7505b3828f",
+      "fromSide": "right",
+      "toNode": "d1c6c42c-2de6-41d9-8540-bec97b40beef",
+      "toSide": "left"
+    },
+    {
+      "id": "9a89b5971c8148a68fa959bffb58b670",
+      "fromNode": "38a368a2-6797-498a-b72e-355e2e45283b",
+      "fromSide": "right",
+      "toNode": "33a45786-e59e-4199-b2d7-7bb950183434",
+      "toSide": "left"
+    },
+    {
+      "id": "ece236d8f0a747a3a2b2d4e153a4ebf0",
+      "fromNode": "33a45786-e59e-4199-b2d7-7bb950183434",
+      "fromSide": "right",
+      "toNode": "19a8575c-3cf2-4141-a8ed-cb604d131474",
+      "toSide": "left"
+    },
+    {
+      "id": "a18c3c6e7af6451b86b9a8e350b30996",
+      "fromNode": "38a368a2-6797-498a-b72e-355e2e45283b",
+      "fromSide": "right",
+      "toNode": "448ec329-8325-40a4-b4ba-ded901da8dce",
+      "toSide": "left"
+    },
+    {
+      "id": "042afbd28ed9457b84ec7ceaab1bff4d",
+      "fromNode": "448ec329-8325-40a4-b4ba-ded901da8dce",
+      "fromSide": "right",
+      "toNode": "b07ddace-2172-49fb-9c3c-5596b2416e2b",
+      "toSide": "left"
+    },
+    {
+      "id": "02041c00dbc6449caa44ef5808c31b03",
+      "fromNode": "38a368a2-6797-498a-b72e-355e2e45283b",
+      "fromSide": "right",
+      "toNode": "c63e3c89-5147-43c2-b184-929eb10d1fe6",
+      "toSide": "left"
+    },
+    {
+      "id": "2302587149fc4680989660f1759915e7",
+      "fromNode": "c63e3c89-5147-43c2-b184-929eb10d1fe6",
+      "fromSide": "right",
+      "toNode": "23ecda24-9f42-4d70-ad2f-b61f09f3963b",
+      "toSide": "left"
+    },
+    {
+      "id": "db23cff219054cf38cb60c0961325f1b",
+      "fromNode": "16227057-5ed7-409a-970c-0cd3468e1c3c",
+      "fromSide": "right",
+      "toNode": "730f7f5e-e0aa-4fa8-afe1-accc85521a18",
+      "toSide": "left"
+    },
+    {
+      "id": "080f2f9f65bc48e3841973ffe524eb2e",
+      "fromNode": "2c6fa958-0eb1-4920-8785-c614894973a3",
+      "fromSide": "right",
+      "toNode": "e38b0923-c21a-47de-8e24-6ef380bb725d",
+      "toSide": "left"
+    },
+    {
+      "id": "1c7653c9f0da42dd8743cc4e03fd7bec",
+      "fromNode": "e38b0923-c21a-47de-8e24-6ef380bb725d",
+      "fromSide": "right",
+      "toNode": "a8975f58-0c31-45ae-9b6e-8cd6b1827790",
+      "toSide": "left"
+    },
+    {
+      "id": "0b9c34e39a174e6d8f5c86389e15139f",
+      "fromNode": "a8975f58-0c31-45ae-9b6e-8cd6b1827790",
+      "fromSide": "right",
+      "toNode": "f2246732-5e9d-43d0-a0fd-a2dd8b36b684",
+      "toSide": "left"
+    },
+    {
+      "id": "c22f4bb592e14231b977a98fbdf7baaf",
+      "fromNode": "e38b0923-c21a-47de-8e24-6ef380bb725d",
+      "fromSide": "right",
+      "toNode": "45c1beff-4e64-4657-b902-91173c4cc5c8",
+      "toSide": "left"
+    },
+    {
+      "id": "1f54dc9a7c6c414fb781034820b29416",
+      "fromNode": "45c1beff-4e64-4657-b902-91173c4cc5c8",
+      "fromSide": "right",
+      "toNode": "5509ade7-1dc8-4d9d-bb51-46a24e20ac60",
+      "toSide": "left"
+    },
+    {
+      "id": "5f01ffe43eed48c89ddd30f2651a1513",
+      "fromNode": "cbed35ae-b714-4cac-9a62-3dc607391d4e",
+      "fromSide": "right",
+      "toNode": "76960408-d3da-41fe-908c-187212665a6b",
+      "toSide": "left"
+    },
+    {
+      "id": "dc68b0f5c6b042988a49941609f56b5e",
+      "fromNode": "76960408-d3da-41fe-908c-187212665a6b",
+      "fromSide": "right",
+      "toNode": "6db4a29f-9231-49ec-b77d-5a6c3e4ec128",
+      "toSide": "left"
+    },
+    {
+      "id": "af75c13eeb934d9d9cb503ffc74ae759",
+      "fromNode": "76960408-d3da-41fe-908c-187212665a6b",
+      "fromSide": "right",
+      "toNode": "1ea9da17-fa6f-4035-a510-eb5bdb8d8512",
+      "toSide": "left"
+    },
+    {
+      "id": "b51e9fb5ddd345948c2d9f9c35c3f67f",
+      "fromNode": "76960408-d3da-41fe-908c-187212665a6b",
+      "fromSide": "right",
+      "toNode": "22c61084-23d7-41d5-a6b7-ee499803e206",
+      "toSide": "left"
+    },
+    {
+      "id": "b8bc82c14db14be4822a11282e3f9c3a",
+      "fromNode": "22c61084-23d7-41d5-a6b7-ee499803e206",
+      "fromSide": "right",
+      "toNode": "13d01cac-3de0-4cbc-90e3-dd5b8b25c10b",
+      "toSide": "left"
+    },
+    {
+      "id": "587d29e5f1064d7a8ea0fb2e41fa66a4",
+      "fromNode": "76960408-d3da-41fe-908c-187212665a6b",
+      "fromSide": "right",
+      "toNode": "cbb11160-fd7d-4cb9-bea5-44da43601231",
+      "toSide": "left"
+    },
+    {
+      "id": "b0cf4beafc0d4992a7cb25f4d9e399b0",
+      "fromNode": "cbb11160-fd7d-4cb9-bea5-44da43601231",
+      "fromSide": "right",
+      "toNode": "9b67b714-d734-4889-90cc-39a96a691694",
+      "toSide": "left"
+    },
+    {
+      "id": "96683d4d90c446fb85474ae055bff2c9",
+      "fromNode": "76960408-d3da-41fe-908c-187212665a6b",
+      "fromSide": "right",
+      "toNode": "0e7e6f6f-256d-4a7a-b4ce-6f081bff2eb1",
+      "toSide": "left"
+    },
+    {
+      "id": "c6ed06cae2a5487bb86051d133da8371",
+      "fromNode": "0e7e6f6f-256d-4a7a-b4ce-6f081bff2eb1",
+      "fromSide": "right",
+      "toNode": "88fb0cf8-9aa5-4966-b379-cbf6193c8819",
+      "toSide": "left"
+    },
+    {
+      "id": "36abe3b47e5b4408a9586e6b944fc732",
+      "fromNode": "76960408-d3da-41fe-908c-187212665a6b",
+      "fromSide": "right",
+      "toNode": "96fbd428-2aa9-4775-8574-0b1415ae7366",
+      "toSide": "left"
+    },
+    {
+      "id": "83dbeb1b248e4d3392cee084bec13380",
+      "fromNode": "96fbd428-2aa9-4775-8574-0b1415ae7366",
+      "fromSide": "right",
+      "toNode": "3237d8d8-6308-46a7-a9c3-9e55f525e8f1",
+      "toSide": "left"
+    },
+    {
+      "id": "04f3ac1ab10d4d549519460aa288ee9b",
+      "fromNode": "96fbd428-2aa9-4775-8574-0b1415ae7366",
+      "fromSide": "right",
+      "toNode": "c2be2b8d-46d0-478c-8919-983a3dfa1c91",
+      "toSide": "left"
+    },
+    {
+      "id": "5ae37e7baa1744b9b83d271e70976766",
+      "fromNode": "76960408-d3da-41fe-908c-187212665a6b",
+      "fromSide": "right",
+      "toNode": "fbac7d6b-b69a-4358-9ede-5a728b742d94",
+      "toSide": "left"
+    },
+    {
+      "id": "54f87126c6264e2ead4e8c025f81b24a",
+      "fromNode": "fbac7d6b-b69a-4358-9ede-5a728b742d94",
+      "fromSide": "right",
+      "toNode": "6778d7d1-dbad-4dd8-b9fd-f1a0a5c33d37",
+      "toSide": "left"
+    },
+    {
+      "id": "ae41f04a49b44ae99d540ead480993c7",
+      "fromNode": "fbac7d6b-b69a-4358-9ede-5a728b742d94",
+      "fromSide": "right",
+      "toNode": "77cb343f-68f2-4e72-9f5d-6f88f9dccd6f",
+      "toSide": "left"
+    },
+    {
+      "id": "ad7bc31441d0416ca37f6f479b0195a2",
+      "fromNode": "fbac7d6b-b69a-4358-9ede-5a728b742d94",
+      "fromSide": "right",
+      "toNode": "79a4054b-ac4e-4da3-bffe-421ba15a88ec",
+      "toSide": "left"
+    },
+    {
+      "id": "3db1d1d81217429791fa09e70f878304",
+      "fromNode": "cbed35ae-b714-4cac-9a62-3dc607391d4e",
+      "fromSide": "right",
+      "toNode": "7104a33b-7f05-4eba-bfb6-7a9baef2d508",
+      "toSide": "left"
+    },
+    {
+      "id": "d7ce7d973bad4cfdb29e38049824e888",
+      "fromNode": "7104a33b-7f05-4eba-bfb6-7a9baef2d508",
+      "fromSide": "right",
+      "toNode": "c7e4690c-c5f1-44bf-8fbf-88606ec7f372",
+      "toSide": "left"
+    },
+    {
+      "id": "7b31fcb258db4b9fad02a8883a84f771",
+      "fromNode": "c7e4690c-c5f1-44bf-8fbf-88606ec7f372",
+      "fromSide": "right",
+      "toNode": "f4a7d4bf-d70f-4d5b-978d-c6ac214cb2dc",
+      "toSide": "left"
+    },
+    {
+      "id": "915d103ad199451791f2131d4c5dfc97",
+      "fromNode": "c7e4690c-c5f1-44bf-8fbf-88606ec7f372",
+      "fromSide": "right",
+      "toNode": "575b18fb-31e6-4ee6-add1-7b667b880fb4",
+      "toSide": "left"
+    },
+    {
+      "id": "3447faa957b64d33afc5a0080b2cbd1d",
+      "fromNode": "7104a33b-7f05-4eba-bfb6-7a9baef2d508",
+      "fromSide": "right",
+      "toNode": "7a142675-c3b2-4c49-8292-00346ad7d88c",
+      "toSide": "left"
+    },
+    {
+      "id": "0777e76cea294b2780a3255f3378b97e",
+      "fromNode": "7a142675-c3b2-4c49-8292-00346ad7d88c",
+      "fromSide": "right",
+      "toNode": "7017664a-17f7-4707-802a-6ac329809bb2",
+      "toSide": "left"
+    },
+    {
+      "id": "19695ada45c548efa7a9f7ee1d6dd069",
+      "fromNode": "7017664a-17f7-4707-802a-6ac329809bb2",
+      "fromSide": "right",
+      "toNode": "8db5c023-c7b5-482d-92af-34d9d9ffdb52",
+      "toSide": "left"
+    },
+    {
+      "id": "d030354d56574a3db24ed7d4390e486f",
+      "fromNode": "7a142675-c3b2-4c49-8292-00346ad7d88c",
+      "fromSide": "right",
+      "toNode": "805bfe7f-805e-455c-a00a-e4d76b020cd2",
+      "toSide": "left"
+    },
+    {
+      "id": "f6242142003a4557821d78a95cf513b4",
+      "fromNode": "805bfe7f-805e-455c-a00a-e4d76b020cd2",
+      "fromSide": "right",
+      "toNode": "697d8c62-9720-4143-92ba-e762a712a9bc",
+      "toSide": "left"
+    },
+    {
+      "id": "c529a2448308467e957b69ae5ccb1b03",
+      "fromNode": "7104a33b-7f05-4eba-bfb6-7a9baef2d508",
+      "fromSide": "right",
+      "toNode": "1ba65c1b-164a-47ca-98b8-092e13e03acf",
+      "toSide": "left"
+    },
+    {
+      "id": "5c503a40e3db46a88a7a8c7441efb5c0",
+      "fromNode": "1ba65c1b-164a-47ca-98b8-092e13e03acf",
+      "fromSide": "right",
+      "toNode": "36f567e5-c6a2-4e1e-b2b5-8e64e5aa0116",
+      "toSide": "left"
+    },
+    {
+      "id": "b012b373ffc445feb5749d68590998ee",
+      "fromNode": "36f567e5-c6a2-4e1e-b2b5-8e64e5aa0116",
+      "fromSide": "right",
+      "toNode": "67bf1956-584b-4c39-987e-5b6790f9e099",
+      "toSide": "left"
+    },
+    {
+      "id": "0592339584b84700999be4ef53663f0f",
+      "fromNode": "36f567e5-c6a2-4e1e-b2b5-8e64e5aa0116",
+      "fromSide": "right",
+      "toNode": "c68f832c-95a8-4af3-badc-ffa4385484a6",
+      "toSide": "left"
+    },
+    {
+      "id": "4bf5702a9e4c44b0b83aea4d9c3d0d49",
+      "fromNode": "c68f832c-95a8-4af3-badc-ffa4385484a6",
+      "fromSide": "right",
+      "toNode": "92b96cd2-e234-4a20-bff3-4362c24ef6f6",
+      "toSide": "left"
+    },
+    {
+      "id": "6150f1cc03174ecb8ebef04430352ba8",
+      "fromNode": "c68f832c-95a8-4af3-badc-ffa4385484a6",
+      "fromSide": "right",
+      "toNode": "73b33375-05e1-4a6f-8209-9a6a1c9246c8",
+      "toSide": "left"
+    },
+    {
+      "id": "3004c8a045444eae821c4d962c2ac3a0",
+      "fromNode": "c68f832c-95a8-4af3-badc-ffa4385484a6",
+      "fromSide": "right",
+      "toNode": "e314e7b7-ac4e-47c5-a3a1-d0b0a688116a",
+      "toSide": "left"
+    },
+    {
+      "id": "eb06d9c7c02b44fc9a23792f34bb78aa",
+      "fromNode": "1ba65c1b-164a-47ca-98b8-092e13e03acf",
+      "fromSide": "right",
+      "toNode": "4b1d18e1-6ff2-44d0-b3db-1858fa13b97f",
+      "toSide": "left"
+    },
+    {
+      "id": "af9156f04c2f47c1a6827afd4ea50261",
+      "fromNode": "4b1d18e1-6ff2-44d0-b3db-1858fa13b97f",
+      "fromSide": "right",
+      "toNode": "153091c6-d452-4bdc-9645-c90d79a76bac",
+      "toSide": "left"
+    },
+    {
+      "id": "1ea8a737ea2a41a59e4035a44a3f2623",
+      "fromNode": "4b1d18e1-6ff2-44d0-b3db-1858fa13b97f",
+      "fromSide": "right",
+      "toNode": "2fccd147-9efc-4eef-990a-8c8552b90cec",
+      "toSide": "left"
+    },
+    {
+      "id": "2c995a1bc47d4301b4132c0e17cce285",
+      "fromNode": "1ba65c1b-164a-47ca-98b8-092e13e03acf",
+      "fromSide": "right",
+      "toNode": "0d1407da-9a3c-42c9-a4f2-92f9a68ebc1b",
+      "toSide": "left"
+    },
+    {
+      "id": "f5bf5b1bd6ca4b01b02609002d556993",
+      "fromNode": "0d1407da-9a3c-42c9-a4f2-92f9a68ebc1b",
+      "fromSide": "right",
+      "toNode": "7f0635cf-636a-4f0e-bff0-4b32ddc07051",
+      "toSide": "left"
+    },
+    {
+      "id": "e6eda05770274cd38542a6695464af11",
+      "fromNode": "0d1407da-9a3c-42c9-a4f2-92f9a68ebc1b",
+      "fromSide": "right",
+      "toNode": "83ca16cc-0100-4e42-89ca-a8a8ce6ab040",
+      "toSide": "left"
+    },
+    {
+      "id": "09980b41e55c433fa0e4528495fb2fe0",
+      "fromNode": "cbed35ae-b714-4cac-9a62-3dc607391d4e",
+      "fromSide": "right",
+      "toNode": "9e2a8a26-0ef5-474a-ad95-8f03296bd1bb",
+      "toSide": "left"
+    },
+    {
+      "id": "ddde5a68e6b74b52a6124d77d20ac4c9",
+      "fromNode": "9e2a8a26-0ef5-474a-ad95-8f03296bd1bb",
+      "fromSide": "right",
+      "toNode": "d7abf010-9d91-4506-953e-684139276f45",
+      "toSide": "left"
+    },
+    {
+      "id": "8c964b45145343109e844de4fa4f45ba",
+      "fromNode": "d7abf010-9d91-4506-953e-684139276f45",
+      "fromSide": "right",
+      "toNode": "901291e3-3b8c-4123-91cb-4eb2eca4de4e",
+      "toSide": "left"
+    },
+    {
+      "id": "736c1d351411404988816432954b3390",
+      "fromNode": "9e2a8a26-0ef5-474a-ad95-8f03296bd1bb",
+      "fromSide": "right",
+      "toNode": "f0846bf4-5f75-46a3-ba76-dd4ed3fc00f4",
+      "toSide": "left"
+    },
+    {
+      "id": "bde4005e6924467babee5090db82adff",
+      "fromNode": "f0846bf4-5f75-46a3-ba76-dd4ed3fc00f4",
+      "fromSide": "right",
+      "toNode": "fe46e24c-ca84-48f2-984e-38cda67f2428",
+      "toSide": "left"
+    },
+    {
+      "id": "6a7a9c736e0349a6a74fa02953e09201",
+      "fromNode": "f0846bf4-5f75-46a3-ba76-dd4ed3fc00f4",
+      "fromSide": "right",
+      "toNode": "60d73b14-abd8-4976-ba63-56fa34a1d3f8",
+      "toSide": "left"
+    },
+    {
+      "id": "e60867392b3f458d88b8b1fce97c548b",
+      "fromNode": "f0846bf4-5f75-46a3-ba76-dd4ed3fc00f4",
+      "fromSide": "right",
+      "toNode": "0b04a8e4-46f8-4567-92ca-67e4d01aac7e",
+      "toSide": "left"
+    },
+    {
+      "id": "cd14e21b9e2f4418a89214f0bfe13b35",
+      "fromNode": "f0846bf4-5f75-46a3-ba76-dd4ed3fc00f4",
+      "fromSide": "right",
+      "toNode": "57dfd772-32bc-43c8-af38-5fa0a115d6c3",
+      "toSide": "left"
+    },
+    {
+      "id": "6114eff608ef4f678ca8b2272646f233",
+      "fromNode": "57dfd772-32bc-43c8-af38-5fa0a115d6c3",
+      "fromSide": "right",
+      "toNode": "2baebeb3-dcb9-4a98-b0ff-892b9ec6d0db",
+      "toSide": "left"
+    },
+    {
+      "id": "faa28ffcc8f54edc90f70f1d34056c9d",
+      "fromNode": "2baebeb3-dcb9-4a98-b0ff-892b9ec6d0db",
+      "fromSide": "right",
+      "toNode": "bb8fdbac-cc23-4845-a3e9-985458190c72",
+      "toSide": "left"
+    },
+    {
+      "id": "61747fd0fddc46cbbb234b600a8a5e09",
+      "fromNode": "57dfd772-32bc-43c8-af38-5fa0a115d6c3",
+      "fromSide": "right",
+      "toNode": "00023456-254a-4ee1-b4f1-033cd2a80061",
+      "toSide": "left"
+    },
+    {
+      "id": "e440bae9250a47bf9b7740b5ac1834fe",
+      "fromNode": "00023456-254a-4ee1-b4f1-033cd2a80061",
+      "fromSide": "right",
+      "toNode": "0d1702eb-e6d4-4308-ae7d-014d1d0ebe41",
+      "toSide": "left"
+    },
+    {
+      "id": "2121663b16de46008224d65f4eb3d364",
+      "fromNode": "f0846bf4-5f75-46a3-ba76-dd4ed3fc00f4",
+      "fromSide": "right",
+      "toNode": "34112307-66d3-4de7-963b-79e93f188ffc",
+      "toSide": "left"
+    },
+    {
+      "id": "637712c1ed7d415bbc1845925ba92ad6",
+      "fromNode": "34112307-66d3-4de7-963b-79e93f188ffc",
+      "fromSide": "right",
+      "toNode": "c28b41e3-f9dc-4d48-93a8-dceccd57da07",
+      "toSide": "left"
+    },
+    {
+      "id": "2f44ba378026432ba5ea2e9b440da074",
+      "fromNode": "f0846bf4-5f75-46a3-ba76-dd4ed3fc00f4",
+      "fromSide": "right",
+      "toNode": "d8e706fe-b46c-4954-b44e-aefa4919b56d",
+      "toSide": "left"
+    },
+    {
+      "id": "6b7f44b765834746af27da8a13c8b20d",
+      "fromNode": "d8e706fe-b46c-4954-b44e-aefa4919b56d",
+      "fromSide": "right",
+      "toNode": "d6eb73ca-f9c7-4f54-942b-601d0e397a41",
+      "toSide": "left"
+    },
+    {
+      "id": "2ef69c2fffe943bc9e1e311fe292ba36",
+      "fromNode": "d6eb73ca-f9c7-4f54-942b-601d0e397a41",
+      "fromSide": "right",
+      "toNode": "c7104a07-8b18-466b-b46e-e50b25765c14",
+      "toSide": "left"
+    },
+    {
+      "id": "b27f3d410f8949f8b9ccbcabe9119696",
+      "fromNode": "9e2a8a26-0ef5-474a-ad95-8f03296bd1bb",
+      "fromSide": "right",
+      "toNode": "adf8b5cf-415d-4968-9859-d109dcef5e44",
+      "toSide": "left"
+    },
+    {
+      "id": "e6dfe1915a024d76b1003bc1cd26edf7",
+      "fromNode": "adf8b5cf-415d-4968-9859-d109dcef5e44",
+      "fromSide": "right",
+      "toNode": "fedd2c28-c94b-42e2-8185-45c10da8c528",
+      "toSide": "left"
+    },
+    {
+      "id": "8a31a53b845c43858812a5fb9fa13a4e",
+      "fromNode": "fedd2c28-c94b-42e2-8185-45c10da8c528",
+      "fromSide": "right",
+      "toNode": "7c37398b-46cf-46ba-b1e6-6459dc43c0d0",
+      "toSide": "left"
+    },
+    {
+      "id": "eb7f9273d95a4cb1aa733b3c1df8cfec",
+      "fromNode": "fedd2c28-c94b-42e2-8185-45c10da8c528",
+      "fromSide": "right",
+      "toNode": "4e139b85-c93c-4696-b4cc-ab29fc085ab3",
+      "toSide": "left"
+    },
+    {
+      "id": "9c921fde9cc14d1bb28102e4e59f8fd4",
+      "fromNode": "4e139b85-c93c-4696-b4cc-ab29fc085ab3",
+      "fromSide": "right",
+      "toNode": "485a3f79-6aea-43f5-8a73-7202bdd3a0cf",
+      "toSide": "left"
+    },
+    {
+      "id": "4d247c5a283141dbb758f88c78fd9739",
+      "fromNode": "adf8b5cf-415d-4968-9859-d109dcef5e44",
+      "fromSide": "right",
+      "toNode": "daa96832-6b91-413f-91b0-1691f3e869e1",
+      "toSide": "left"
+    },
+    {
+      "id": "f3c144863fcb485196aa52bceb7cc29a",
+      "fromNode": "daa96832-6b91-413f-91b0-1691f3e869e1",
+      "fromSide": "right",
+      "toNode": "431a7ad9-b302-43a6-8cfe-9d96f2309b25",
+      "toSide": "left"
+    },
+    {
+      "id": "192570b7ed0b47b28aa53791a0991881",
+      "fromNode": "431a7ad9-b302-43a6-8cfe-9d96f2309b25",
+      "fromSide": "right",
+      "toNode": "068b7cf6-a8a2-4412-afa1-847a3d3e24e5",
+      "toSide": "left"
+    },
+    {
+      "id": "b7c50de9af16418f820683d4ae585bb2",
+      "fromNode": "daa96832-6b91-413f-91b0-1691f3e869e1",
+      "fromSide": "right",
+      "toNode": "e8d1a525-b2fb-4c68-9c7f-13f45c0fc935",
+      "toSide": "left"
+    },
+    {
+      "id": "8d9198c966284115ab90af39b2c55bf5",
+      "fromNode": "adf8b5cf-415d-4968-9859-d109dcef5e44",
+      "fromSide": "right",
+      "toNode": "496352b9-7420-4c4b-aec3-c97efa07a184",
+      "toSide": "left"
+    },
+    {
+      "id": "6af23e2b76c54c4292f003715edc8414",
+      "fromNode": "496352b9-7420-4c4b-aec3-c97efa07a184",
+      "fromSide": "right",
+      "toNode": "da0e5dfb-6c1b-46e6-a58b-ce634889433f",
+      "toSide": "left"
+    },
+    {
+      "id": "3ea35ca9f71648efab9f92da807d86f7",
+      "fromNode": "da0e5dfb-6c1b-46e6-a58b-ce634889433f",
+      "fromSide": "right",
+      "toNode": "f8b0e6a8-6890-4aea-80d0-48d4f126d455",
+      "toSide": "left"
+    },
+    {
+      "id": "6e0fcda2e7b544c48274925e77a972e7",
+      "fromNode": "adf8b5cf-415d-4968-9859-d109dcef5e44",
+      "fromSide": "right",
+      "toNode": "d83a58ce-03db-4690-8071-b3f52986e1f2",
+      "toSide": "left"
+    },
+    {
+      "id": "e0a980726d3f455fb357e60ebfc981a7",
+      "fromNode": "d83a58ce-03db-4690-8071-b3f52986e1f2",
+      "fromSide": "right",
+      "toNode": "e4eef8e8-11c6-49d5-a1f4-7bce22b3076e",
+      "toSide": "left"
+    },
+    {
+      "id": "d9171ca451a140d08c97203e36a65fcd",
+      "fromNode": "e4eef8e8-11c6-49d5-a1f4-7bce22b3076e",
+      "fromSide": "right",
+      "toNode": "f0ea57a0-995e-4c06-8b32-ebb1b7139daf",
+      "toSide": "left"
+    },
+    {
+      "id": "f13cafdd679448f0a91abfef156f60f2",
+      "fromNode": "cbed35ae-b714-4cac-9a62-3dc607391d4e",
+      "fromSide": "right",
+      "toNode": "0d6bc452-7f47-4951-ab25-a2b012a2a7ff",
+      "toSide": "left"
+    },
+    {
+      "id": "22b8fc6aab28466eb9e7aa020b693e89",
+      "fromNode": "0d6bc452-7f47-4951-ab25-a2b012a2a7ff",
+      "fromSide": "right",
+      "toNode": "9c9a9f00-781f-4fc2-97e6-c898b2e3912c",
+      "toSide": "left"
+    },
+    {
+      "id": "8c15edba80254d6c9ed3ddd255475615",
+      "fromNode": "9c9a9f00-781f-4fc2-97e6-c898b2e3912c",
+      "fromSide": "right",
+      "toNode": "ee361c9f-bf64-4ed9-a30c-dee0eae2aa11",
+      "toSide": "left"
+    },
+    {
+      "id": "dc3b132e9388461899b9c437743e7e48",
+      "fromNode": "ee361c9f-bf64-4ed9-a30c-dee0eae2aa11",
+      "fromSide": "right",
+      "toNode": "74cb6b52-1160-4eaa-b51c-2d236e28d7b6",
+      "toSide": "left"
+    },
+    {
+      "id": "7a253461ad2d4ae684e0263d61f4362e",
+      "fromNode": "9c9a9f00-781f-4fc2-97e6-c898b2e3912c",
+      "fromSide": "right",
+      "toNode": "53769872-8139-444e-bdef-9f640d34ffab",
+      "toSide": "left"
+    },
+    {
+      "id": "8333599b6b6b4beca5183bd8a6cb9ea7",
+      "fromNode": "53769872-8139-444e-bdef-9f640d34ffab",
+      "fromSide": "right",
+      "toNode": "729199c7-8d8f-4735-a487-b4035c7a7280",
+      "toSide": "left"
+    },
+    {
+      "id": "0257f5a0f3b9441889f60b7f20462dff",
+      "fromNode": "729199c7-8d8f-4735-a487-b4035c7a7280",
+      "fromSide": "right",
+      "toNode": "618e0331-b2e7-4756-abd7-e13978520f0b",
+      "toSide": "left"
+    },
+    {
+      "id": "d065382786aa41c699dfde7c96a3ca12",
+      "fromNode": "53769872-8139-444e-bdef-9f640d34ffab",
+      "fromSide": "right",
+      "toNode": "0cd756e3-d9e5-45bc-9ed4-49480e270bd0",
+      "toSide": "left"
+    },
+    {
+      "id": "264b9d22e89b45fb97e1b98092cda31b",
+      "fromNode": "0cd756e3-d9e5-45bc-9ed4-49480e270bd0",
+      "fromSide": "right",
+      "toNode": "09c148ca-f599-4316-a85f-2780adc7ced0",
+      "toSide": "left"
+    },
+    {
+      "id": "487a66ec1ab24e28a96eb4c9c27cb456",
+      "fromNode": "53769872-8139-444e-bdef-9f640d34ffab",
+      "fromSide": "right",
+      "toNode": "1ae645b1-3312-46f6-a772-03793ab1d891",
+      "toSide": "left"
+    },
+    {
+      "id": "ade275f490a44710ad808b05438fbe0e",
+      "fromNode": "9c9a9f00-781f-4fc2-97e6-c898b2e3912c",
+      "fromSide": "right",
+      "toNode": "00065301-0992-4e20-9f3c-d7e7fe81cbec",
+      "toSide": "left"
+    },
+    {
+      "id": "3b6750a28e2c487ebfefcb2fac8ae730",
+      "fromNode": "00065301-0992-4e20-9f3c-d7e7fe81cbec",
+      "fromSide": "right",
+      "toNode": "5ca47095-9843-40ff-a192-125e183ee931",
+      "toSide": "left"
+    },
+    {
+      "id": "5e0e0306b9c94dde80807fef08e24bad",
+      "fromNode": "00065301-0992-4e20-9f3c-d7e7fe81cbec",
+      "fromSide": "right",
+      "toNode": "3754224b-6c56-4dd5-b1e6-b9380ab6a781",
+      "toSide": "left"
+    },
+    {
+      "id": "ee6bef8cb03b47a4a365d02466fdabc8",
+      "fromNode": "00065301-0992-4e20-9f3c-d7e7fe81cbec",
+      "fromSide": "right",
+      "toNode": "a4c4176d-9c42-41df-851a-3538930e3ca9",
+      "toSide": "left"
+    },
+    {
+      "id": "dbd9df1064204ac48479fe67fa32fbd1",
+      "fromNode": "a4c4176d-9c42-41df-851a-3538930e3ca9",
+      "fromSide": "right",
+      "toNode": "70d30335-52a0-4f92-9b7d-77ba210169d0",
+      "toSide": "left"
+    },
+    {
+      "id": "ceb2bb836382491ca1337d779d016975",
+      "fromNode": "00065301-0992-4e20-9f3c-d7e7fe81cbec",
+      "fromSide": "right",
+      "toNode": "0f0add35-8054-449b-b121-ac4945384bb2",
+      "toSide": "left"
+    },
+    {
+      "id": "7dc63bc66b974279a49d445bd842b8b6",
+      "fromNode": "0f0add35-8054-449b-b121-ac4945384bb2",
+      "fromSide": "right",
+      "toNode": "b7bc9b65-876f-4862-a45b-ae4a5d551d5f",
+      "toSide": "left"
+    },
+    {
+      "id": "146d75224ec44eea8952604802131e76",
+      "fromNode": "0d6bc452-7f47-4951-ab25-a2b012a2a7ff",
+      "fromSide": "right",
+      "toNode": "6582bfe8-76cb-4470-8c01-6cdac4ce13ae",
+      "toSide": "left"
+    },
+    {
+      "id": "d927d7a834174398bcd290ad238808b6",
+      "fromNode": "6582bfe8-76cb-4470-8c01-6cdac4ce13ae",
+      "fromSide": "right",
+      "toNode": "60e9532c-35c0-40b9-babf-e40b43c63096",
+      "toSide": "left"
+    },
+    {
+      "id": "66a46314debf4c80a8218983c430d83d",
+      "fromNode": "60e9532c-35c0-40b9-babf-e40b43c63096",
+      "fromSide": "right",
+      "toNode": "1052f86c-ad6c-40e1-a8db-d314e7fb76ce",
+      "toSide": "left"
+    },
+    {
+      "id": "f23f3c3dc25441e59d11e2e9b42582a5",
+      "fromNode": "6582bfe8-76cb-4470-8c01-6cdac4ce13ae",
+      "fromSide": "right",
+      "toNode": "8062b2ca-743a-4d99-bece-3cff872e148e",
+      "toSide": "left"
+    },
+    {
+      "id": "d193f814e98d49b5ab8c5ea97d6564a4",
+      "fromNode": "8062b2ca-743a-4d99-bece-3cff872e148e",
+      "fromSide": "right",
+      "toNode": "ac410634-ae63-43ea-8d5c-52c2d0e913f7",
+      "toSide": "left"
+    },
+    {
+      "id": "d12c03ad8994400b9c3aa950190f388a",
+      "fromNode": "8062b2ca-743a-4d99-bece-3cff872e148e",
+      "fromSide": "right",
+      "toNode": "9e72a4c2-7169-422b-9892-292732497c3a",
+      "toSide": "left"
+    },
+    {
+      "id": "7d1b706ac8aa4852b861f7a2cad8d7ef",
+      "fromNode": "8062b2ca-743a-4d99-bece-3cff872e148e",
+      "fromSide": "right",
+      "toNode": "3518221b-c942-4eb3-a95e-c22b8aa65ddc",
+      "toSide": "left"
+    },
+    {
+      "id": "363860c8fd2a4232bf5508e2057a5dd7",
+      "fromNode": "6582bfe8-76cb-4470-8c01-6cdac4ce13ae",
+      "fromSide": "right",
+      "toNode": "c011a682-98c7-4786-9136-0403f5c20186",
+      "toSide": "left"
+    },
+    {
+      "id": "d7b895edbc7f4024a9fad157c873c69e",
+      "fromNode": "c011a682-98c7-4786-9136-0403f5c20186",
+      "fromSide": "right",
+      "toNode": "3450ec46-5500-4076-b45b-4bc399f11f7a",
+      "toSide": "left"
+    },
+    {
+      "id": "389f94eb3375406fba7c064ab1625192",
+      "fromNode": "c011a682-98c7-4786-9136-0403f5c20186",
+      "fromSide": "right",
+      "toNode": "5d53b5e1-4696-4d41-91e2-1bc1b85f6860",
+      "toSide": "left"
+    },
+    {
+      "id": "43a6beafc6ae472a8a4f03bf639198bd",
+      "fromNode": "c011a682-98c7-4786-9136-0403f5c20186",
+      "fromSide": "right",
+      "toNode": "8def672b-606f-438c-8a2a-820e15f95e83",
+      "toSide": "left"
+    },
+    {
+      "id": "88d282d519534f08a2daa263d6c35789",
+      "fromNode": "0d6bc452-7f47-4951-ab25-a2b012a2a7ff",
+      "fromSide": "right",
+      "toNode": "a3b486c6-15ed-41f0-90c4-6c735a952523",
+      "toSide": "left"
+    },
+    {
+      "id": "19d725b363d8499eb009b33cd9dbaf8e",
+      "fromNode": "a3b486c6-15ed-41f0-90c4-6c735a952523",
+      "fromSide": "right",
+      "toNode": "27ec7cc3-ef9a-4e03-92a0-821ad90c3019",
+      "toSide": "left"
+    },
+    {
+      "id": "36d85aaa3e5848139be51dab559e2508",
+      "fromNode": "27ec7cc3-ef9a-4e03-92a0-821ad90c3019",
+      "fromSide": "right",
+      "toNode": "a83735a8-d895-4542-9a73-b433aa343875",
+      "toSide": "left"
+    },
+    {
+      "id": "13dbadbcfcfa4d91842fd96534b6dd19",
+      "fromNode": "a3b486c6-15ed-41f0-90c4-6c735a952523",
+      "fromSide": "right",
+      "toNode": "02493d29-2ed2-4549-84c6-cfbd4176f7ff",
+      "toSide": "left"
+    },
+    {
+      "id": "2417c2a4b06a4e0db95aaf75eae31b23",
+      "fromNode": "02493d29-2ed2-4549-84c6-cfbd4176f7ff",
+      "fromSide": "right",
+      "toNode": "d29622cd-a7f0-4eaf-bdce-6fcea9a4919c",
+      "toSide": "left"
+    },
+    {
+      "id": "4de8187e28064d93a574ec973dbdbd88",
+      "fromNode": "02493d29-2ed2-4549-84c6-cfbd4176f7ff",
+      "fromSide": "right",
+      "toNode": "82246083-698d-4cb3-8a5f-1b74330e26d1",
+      "toSide": "left"
+    },
+    {
+      "id": "16470134fb674162a909c2dc5fbc4ece",
+      "fromNode": "02493d29-2ed2-4549-84c6-cfbd4176f7ff",
+      "fromSide": "right",
+      "toNode": "9eb7c709-cd84-4c44-803e-3563e1cec58f",
+      "toSide": "left"
+    },
+    {
+      "id": "643821c19f9e4ac8abab90aff75f5f5e",
+      "fromNode": "a3b486c6-15ed-41f0-90c4-6c735a952523",
+      "fromSide": "right",
+      "toNode": "12347d0c-1ffc-40e8-8591-0dcf10deb074",
+      "toSide": "left"
+    },
+    {
+      "id": "c8fecffd7d7c4b4fb06aebb80a07bf44",
+      "fromNode": "12347d0c-1ffc-40e8-8591-0dcf10deb074",
+      "fromSide": "right",
+      "toNode": "b9dc8352-46f2-432b-beee-1607ffc99fcb",
+      "toSide": "left"
+    },
+    {
+      "id": "1ed6ea960a6642da86546c4208467c5e",
+      "fromNode": "12347d0c-1ffc-40e8-8591-0dcf10deb074",
+      "fromSide": "right",
+      "toNode": "3b445442-f26e-4275-b138-055e862ac040",
+      "toSide": "left"
+    },
+    {
+      "id": "1dfa760ee851408d83cb2b7b6bd25c30",
+      "fromNode": "0d6bc452-7f47-4951-ab25-a2b012a2a7ff",
+      "fromSide": "right",
+      "toNode": "eb684de8-75a2-4360-87c3-75a685d72f06",
+      "toSide": "left"
+    },
+    {
+      "id": "81f4c6e6d5b14b3f8ffa4c890223b5ad",
+      "fromNode": "eb684de8-75a2-4360-87c3-75a685d72f06",
+      "fromSide": "right",
+      "toNode": "2c618c75-2b93-44f5-8ed1-66c11ff4f0fa",
+      "toSide": "left"
+    },
+    {
+      "id": "a3ca40e851cc4d4b8b85a93d5fe7a23b",
+      "fromNode": "2c618c75-2b93-44f5-8ed1-66c11ff4f0fa",
+      "fromSide": "right",
+      "toNode": "2012c6fa-8bbf-4602-b451-5c2fd37bcf2f",
+      "toSide": "left"
+    },
+    {
+      "id": "51d764152a31414b9f05967da6835a40",
+      "fromNode": "2012c6fa-8bbf-4602-b451-5c2fd37bcf2f",
+      "fromSide": "right",
+      "toNode": "50769088-cf65-460a-b407-dfc72363c305",
+      "toSide": "left"
+    },
+    {
+      "id": "049967deacbf47d786f53f6c09451755",
+      "fromNode": "2012c6fa-8bbf-4602-b451-5c2fd37bcf2f",
+      "fromSide": "right",
+      "toNode": "14821aba-8431-44a4-9184-bd43b9111d6e",
+      "toSide": "left"
+    },
+    {
+      "id": "e772f871407f4f87b2e9dc1bb225635e",
+      "fromNode": "eb684de8-75a2-4360-87c3-75a685d72f06",
+      "fromSide": "right",
+      "toNode": "10a55456-b63c-443e-986f-dbeb26c038a9",
+      "toSide": "left"
+    },
+    {
+      "id": "d421719e359847ca85164e3aeb858f0f",
+      "fromNode": "10a55456-b63c-443e-986f-dbeb26c038a9",
+      "fromSide": "right",
+      "toNode": "16525fd8-db81-4bf3-9edb-1fed53f0834c",
+      "toSide": "left"
+    },
+    {
+      "id": "92aef75eaad6440791abeab7a9402754",
+      "fromNode": "10a55456-b63c-443e-986f-dbeb26c038a9",
+      "fromSide": "right",
+      "toNode": "1aa25b7f-8d45-4c3d-9c55-64482d48a51b",
+      "toSide": "left"
+    },
+    {
+      "id": "30146508a5fe4292b10d56c79b95fe5b",
+      "fromNode": "10a55456-b63c-443e-986f-dbeb26c038a9",
+      "fromSide": "right",
+      "toNode": "e621a7c2-d882-4475-877d-477f97725b22",
+      "toSide": "left"
+    },
+    {
+      "id": "613f7f8953c547b287706e445d75b889",
+      "fromNode": "10a55456-b63c-443e-986f-dbeb26c038a9",
+      "fromSide": "right",
+      "toNode": "0434a0e4-cbd6-4f97-8d6f-bd3d0f006133",
+      "toSide": "left"
+    },
+    {
+      "id": "3069e2a150404520a3a992ce73254ca0",
+      "fromNode": "eb684de8-75a2-4360-87c3-75a685d72f06",
+      "fromSide": "right",
+      "toNode": "281b2365-bcef-4e6a-9418-06aea989ed84",
+      "toSide": "left"
+    },
+    {
+      "id": "8537bf5ed5ba468a913a4639dafab562",
+      "fromNode": "281b2365-bcef-4e6a-9418-06aea989ed84",
+      "fromSide": "right",
+      "toNode": "a2e9013b-ab61-42b9-a9e9-6f44c2366b1f",
+      "toSide": "left"
+    },
+    {
+      "id": "7efb355071724e71acf93d167b2516d0",
+      "fromNode": "a2e9013b-ab61-42b9-a9e9-6f44c2366b1f",
+      "fromSide": "right",
+      "toNode": "8512f40b-4c34-4f66-86c1-8c2536e0b58d",
+      "toSide": "left"
+    },
+    {
+      "id": "dbf59c69e6b7424589b767f4da6b9f46",
+      "fromNode": "a2e9013b-ab61-42b9-a9e9-6f44c2366b1f",
+      "fromSide": "right",
+      "toNode": "685bc2ef-2b95-40b9-8f22-20aaf8ecbf82",
+      "toSide": "left"
+    },
+    {
+      "id": "f5abebbf07cc44e0a71cce431cbe4238",
+      "fromNode": "0d6bc452-7f47-4951-ab25-a2b012a2a7ff",
+      "fromSide": "right",
+      "toNode": "b5abf7c0-ba25-4b56-b66d-3dffe4eca2be",
+      "toSide": "left"
+    },
+    {
+      "id": "eb666b4482454c0b8de441fe6c713677",
+      "fromNode": "b5abf7c0-ba25-4b56-b66d-3dffe4eca2be",
+      "fromSide": "right",
+      "toNode": "8cf2f337-545f-4ca1-b95f-209f2a896dd7",
+      "toSide": "left"
+    },
+    {
+      "id": "cfa3948719d64a059eecd55c0e9053ac",
+      "fromNode": "8cf2f337-545f-4ca1-b95f-209f2a896dd7",
+      "fromSide": "right",
+      "toNode": "eced3b8b-623a-4f09-9f7e-aec8f4d74b03",
+      "toSide": "left"
+    },
+    {
+      "id": "fbd83113dbe44a32a5a3f52a046a603e",
+      "fromNode": "eced3b8b-623a-4f09-9f7e-aec8f4d74b03",
+      "fromSide": "right",
+      "toNode": "efd68e59-1d7f-4aed-8a72-c437d9aa1dba",
+      "toSide": "left"
+    },
+    {
+      "id": "a4d5d918e7c64fbb9d013143bcb50d6c",
+      "fromNode": "efd68e59-1d7f-4aed-8a72-c437d9aa1dba",
+      "fromSide": "right",
+      "toNode": "6a7cd445-a81a-4f68-b313-3ee03e1dcce0",
+      "toSide": "left"
+    },
+    {
+      "id": "fbf4daf596814b968db818f5572e9b44",
+      "fromNode": "eced3b8b-623a-4f09-9f7e-aec8f4d74b03",
+      "fromSide": "right",
+      "toNode": "01e1e723-3a05-4013-b53f-18708ea198d5",
+      "toSide": "left"
+    },
+    {
+      "id": "496cc76036084806a914a49adc0ba2e2",
+      "fromNode": "cbed35ae-b714-4cac-9a62-3dc607391d4e",
+      "fromSide": "right",
+      "toNode": "df10a289-2499-4089-91de-1ef5808f819a",
+      "toSide": "left"
+    },
+    {
+      "id": "e5edeacc70d047dab55f0237032f3b58",
+      "fromNode": "df10a289-2499-4089-91de-1ef5808f819a",
+      "fromSide": "right",
+      "toNode": "0ec5887b-8f52-4c0c-b831-319c906e2080",
+      "toSide": "left"
+    },
+    {
+      "id": "2944ea5107af4727aeafa9ad092a3511",
+      "fromNode": "0ec5887b-8f52-4c0c-b831-319c906e2080",
+      "fromSide": "right",
+      "toNode": "24d23cda-6112-46c0-a9d0-ecea74f8fd05",
+      "toSide": "left"
+    },
+    {
+      "id": "59853058d40b49ae9ac1667517f7f3f0",
+      "fromNode": "24d23cda-6112-46c0-a9d0-ecea74f8fd05",
+      "fromSide": "right",
+      "toNode": "f9426aac-c462-4d87-aec4-297198763d18",
+      "toSide": "left"
+    },
+    {
+      "id": "122022071ddc4efdade19322e3c27185",
+      "fromNode": "f9426aac-c462-4d87-aec4-297198763d18",
+      "fromSide": "right",
+      "toNode": "5cddc767-113c-4a94-812c-d7e61fe4662c",
+      "toSide": "left"
+    },
+    {
+      "id": "f9b1dc1e4e2c4148a7859b7085b2e802",
+      "fromNode": "df10a289-2499-4089-91de-1ef5808f819a",
+      "fromSide": "right",
+      "toNode": "c68fa97b-5e77-4940-8347-173797603e1d",
+      "toSide": "left"
+    },
+    {
+      "id": "469dd7c30b3c4c949ac0bba3e5617862",
+      "fromNode": "c68fa97b-5e77-4940-8347-173797603e1d",
+      "fromSide": "right",
+      "toNode": "f594c639-9605-47b8-9398-f2f7198795c8",
+      "toSide": "left"
+    },
+    {
+      "id": "48e6333a3cd543209e6c659d89e5a6d5",
+      "fromNode": "f594c639-9605-47b8-9398-f2f7198795c8",
+      "fromSide": "right",
+      "toNode": "38583a68-bcd7-476b-8d87-2289d651ec47",
+      "toSide": "left"
+    },
+    {
+      "id": "f4d633840a444726a129841e8cfa9b56",
+      "fromNode": "c68fa97b-5e77-4940-8347-173797603e1d",
+      "fromSide": "right",
+      "toNode": "353f375f-a2d4-4daa-ae69-b35421e59805",
+      "toSide": "left"
+    },
+    {
+      "id": "ac405bbacff944a3911ba8851fc76643",
+      "fromNode": "353f375f-a2d4-4daa-ae69-b35421e59805",
+      "fromSide": "right",
+      "toNode": "18ada666-a07e-4452-ad41-06283fd8c1bd",
+      "toSide": "left"
+    },
+    {
+      "id": "950e316976b746e998f681de2c2f7aae",
+      "fromNode": "18ada666-a07e-4452-ad41-06283fd8c1bd",
+      "fromSide": "right",
+      "toNode": "b602ba5b-4dd9-424c-8ded-8f88f8fec0a1",
+      "toSide": "left"
+    },
+    {
+      "id": "94f21e27f89e48e18b85573f94813539",
+      "fromNode": "353f375f-a2d4-4daa-ae69-b35421e59805",
+      "fromSide": "right",
+      "toNode": "39320182-4b74-4633-ab90-ed9a84b1b279",
+      "toSide": "left"
+    },
+    {
+      "id": "90fd66e3255643fb9cfe34a3e3f501c2",
+      "fromNode": "39320182-4b74-4633-ab90-ed9a84b1b279",
+      "fromSide": "right",
+      "toNode": "1b1c42f8-ef38-4655-8987-0389a3ada965",
+      "toSide": "left"
+    },
+    {
+      "id": "af79d55c5aa743dcbd2a27a4d19e322d",
+      "fromNode": "39320182-4b74-4633-ab90-ed9a84b1b279",
+      "fromSide": "right",
+      "toNode": "fd4d3d46-22ea-4eae-a476-4d8ccdc35730",
+      "toSide": "left"
+    },
+    {
+      "id": "ee83e1ba0a9742adbfec383d39952eae",
+      "fromNode": "39320182-4b74-4633-ab90-ed9a84b1b279",
+      "fromSide": "right",
+      "toNode": "c37de5dd-c510-47af-8cb3-d83db1ec21eb",
+      "toSide": "left"
+    },
+    {
+      "id": "dfd297bc0408466d8a24f187232570a1",
+      "fromNode": "39320182-4b74-4633-ab90-ed9a84b1b279",
+      "fromSide": "right",
+      "toNode": "1d51add5-9ae5-4ce6-9e77-38244dfe656a",
+      "toSide": "left"
+    },
+    {
+      "id": "c0c770e5ea854790b8fe4cb10d8736fe",
+      "fromNode": "c68fa97b-5e77-4940-8347-173797603e1d",
+      "fromSide": "right",
+      "toNode": "632526a1-6dd1-42dd-a293-e08340a5ae07",
+      "toSide": "left"
+    },
+    {
+      "id": "775939f39b9f4cbdac270c5e2de5f10c",
+      "fromNode": "632526a1-6dd1-42dd-a293-e08340a5ae07",
+      "fromSide": "right",
+      "toNode": "b61fd898-b032-45f3-a2e0-1704c6603dcd",
+      "toSide": "left"
+    },
+    {
+      "id": "82a19ef817c546feba23ad6ca90e481d",
+      "fromNode": "b61fd898-b032-45f3-a2e0-1704c6603dcd",
+      "fromSide": "right",
+      "toNode": "963682cc-3403-4ddc-8f48-bc4de9ca614e",
+      "toSide": "left"
+    },
+    {
+      "id": "cc34c562a58945fdbff681951225d712",
+      "fromNode": "632526a1-6dd1-42dd-a293-e08340a5ae07",
+      "fromSide": "right",
+      "toNode": "c8e3673e-1ee0-4c8a-8710-b1299c939a1d",
+      "toSide": "left"
+    },
+    {
+      "id": "2659ece11f72458495e6ca537a971896",
+      "fromNode": "c8e3673e-1ee0-4c8a-8710-b1299c939a1d",
+      "fromSide": "right",
+      "toNode": "16455a75-329b-4c38-9b14-4ab61eec2df9",
+      "toSide": "left"
+    },
+    {
+      "id": "00d93a0775744f18b53bd9a2755fdbf7",
+      "fromNode": "632526a1-6dd1-42dd-a293-e08340a5ae07",
+      "fromSide": "right",
+      "toNode": "ac2ec55f-65a4-47ec-8ea5-c8e913cb4013",
+      "toSide": "left"
+    },
+    {
+      "id": "b96fd57b2ccd4d1886f031a2cc313358",
+      "fromNode": "ac2ec55f-65a4-47ec-8ea5-c8e913cb4013",
+      "fromSide": "right",
+      "toNode": "be8c9be4-2881-4eaf-85a5-1aba8a1e9a13",
+      "toSide": "left"
+    },
+    {
+      "id": "cc7b98f4a9da4dd7b7b38028018d27f4",
+      "fromNode": "632526a1-6dd1-42dd-a293-e08340a5ae07",
+      "fromSide": "right",
+      "toNode": "c77c8c7e-73db-47f6-8ca3-d52227cecff0",
+      "toSide": "left"
+    },
+    {
+      "id": "482712a992084c0ba0f0bb6d85277390",
+      "fromNode": "c77c8c7e-73db-47f6-8ca3-d52227cecff0",
+      "fromSide": "right",
+      "toNode": "07bae4fe-a4b2-40e3-92af-60ae8e84e802",
+      "toSide": "left"
+    }
+  ]
+}
