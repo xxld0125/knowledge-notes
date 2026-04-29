@@ -9,3 +9,4 @@
 - [读书笔记](./knowledge-base/读书笔记/docs/000_目录.md)
 - [Vue](./knowledge-base/Vue/docs/000_目录.md)
 - [默认知识库](./knowledge-base/默认知识库/docs/000_目录.md)
+- [AI](./knowledge-base/AI/docs/000_目录.md)
