@@ -1,0 +1,12 @@
+.git
+.obsidian
+interview
+.env
+.env.*
+node_modules
+.DS_Store
+dist
+tmp
+.cache
+coverage
+test

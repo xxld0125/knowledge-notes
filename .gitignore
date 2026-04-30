@@ -17,3 +17,8 @@ __pycache__/
 tmp/
 dist/
 
+node_modules/
+.vitepress/content/
+.vitepress/dist/
+.vitepress/public/canvas/
+.vercel

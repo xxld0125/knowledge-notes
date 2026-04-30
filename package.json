@@ -1,0 +1,17 @@
+{
+  "name": "knowledge-notes",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "docs:dev": "node scripts/prepare-docs.mjs && vitepress dev --host 127.0.0.1",
+    "docs:build": "node scripts/prepare-docs.mjs && vitepress build",
+    "docs:preview": "node scripts/prepare-docs.mjs && vitepress build && vitepress preview --host 127.0.0.1"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  },
+  "dependencies": {
+    "@json-canvas-viewer/vue": "^1.0.3"
+  }
+}
