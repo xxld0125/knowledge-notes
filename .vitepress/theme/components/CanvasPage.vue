@@ -118,7 +118,9 @@ onBeforeUnmount(() => {
         Canvas 加载失败：{{ errorMessage }}
       </p>
       <Suspense v-else>
-        <JSONCanvasViewerComponent :canvas="canvas" />
+        <div class="canvas-viewer-host">
+          <JSONCanvasViewerComponent :canvas="canvas" />
+        </div>
         <template #fallback>
           <p class="canvas-loading">正在加载 Canvas...</p>
         </template>
@@ -130,9 +132,37 @@ onBeforeUnmount(() => {
 <style scoped>
 .canvas-page {
   position: relative;
+  height: 70vh;
+  min-height: 70vh;
   border: 1px solid var(--vp-c-divider);
   border-radius: 12px;
   overflow: hidden;
+  background: var(--vp-c-bg);
+}
+
+.canvas-page:fullscreen {
+  width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+  border: none;
+  border-radius: 0;
+}
+
+.canvas-viewer-host {
+  width: 100%;
+  height: 100%;
+}
+
+.canvas-viewer-host :deep(section) {
+  width: 100%;
+  height: 100%;
+  max-width: none !important;
+  max-height: none !important;
+}
+
+.canvas-viewer-host :deep(.JSON-Canvas-Viewer) {
+  width: 100%;
+  height: 100%;
 }
 
 .fullscreen-toggle {
